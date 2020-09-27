@@ -1,0 +1,136 @@
+/* Small devices (portrait phones, 576px and up) */
+@media (min-width: 320px) {
+    /* === CSS for Common Text === */
+    .heading.md > h2 {
+        font-size: 21px;
+        line-height: 30px;
+    }
+    .heading.md > h3 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .heading.md > h2 {
+        font-weight: 800;
+    }
+    .heading.md > h3 {
+        font-weight: 500;
+    }
+    .font-16 {
+        font-size: 13px;
+    }
+    .font-18 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .font-24 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    /* === End CSS for Common Text === */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* === CSS for Common Text === */
+    .heading.md > h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .heading.md > h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .font-16 {
+        font-size: 14px;
+    }
+    .font-18 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .font-24 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    /* === End CSS for Common Text === */
+    .btn {
+        height: 40px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+}
+
+@media (min-width: 1024px) {
+    /* === CSS for Common Text === */
+    .heading.md > h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .heading.md > h3 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .font-16 {
+        font-size: 16px;
+    }
+    .font-18 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .font-24 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    /* === End CSS for Common Text === */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+}
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1350px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+
+@media (max-width: 1100px) {
+    /* === CSS for Header section === */
+    /* === End CSS for Header section === */
+}
+
+@media (max-width: 1024px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+}
+
+@media (max-width: 991.98px) and (orientation: landscape) {
+}
+@media (max-width: 575.8px) and (orientation: landscape) {
+}
+
+@media (max-width: 575.8px) and (orientation: portrait) {
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
