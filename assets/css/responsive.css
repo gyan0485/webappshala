@@ -2,15 +2,13 @@
 @media (min-width: 320px) {
     /* === CSS for Common Text === */
     .heading.md > h2 {
-        font-size: 21px;
+        font-size: 20px;
+        font-weight: 700;
         line-height: 30px;
     }
     .heading.md > h3 {
         font-size: 18px;
         line-height: 26px;
-    }
-    .heading.md > h2 {
-        font-weight: 800;
     }
     .heading.md > h3 {
         font-weight: 500;
@@ -27,6 +25,20 @@
         line-height: 22px;
     }
     /* === End CSS for Common Text === */
+    .banner-content h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .testimonial-content p,
+    .testimonial-name {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .solution-content .center-circle h3 {
+        font-size: 16px;
+        font-weight: 700;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -38,7 +50,7 @@
     /* === CSS for Common Text === */
     .heading.md > h2 {
         font-size: 24px;
-        line-height: 32px;
+        line-height: 36px;
     }
     .heading.md > h3 {
         font-size: 22px;
@@ -59,18 +71,107 @@
     .btn {
         height: 40px;
     }
+    .testimonial-caption {
+        font-size: 15px;
+    }
+    .testimonial-content p,
+    .testimonial-name {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .pricing-left {
+        margin-right: -20px;
+    }
+    .pricing-right {
+        margin-left: -20px;
+    }
+    
+    .solution-content {
+        max-width: 820px;
+        position: relative;
+        height: 355px;
+    }
+    .bubble-box {
+        position: absolute;
+    }
+    .bubble-1 {
+        left: 8%;
+    }
+    .bubble-2 {
+        left: 11%;
+    }
+    .bubble-3 {
+        left: 33%;
+    }
+    .bubble-4 {
+        right: 33%;
+    }
+    .bubble-5 {
+        right: 11%;
+    }
+    .bubble-6 {
+        right: 8%;
+    }
+    .bubble-3,
+    .bubble-4 {
+        bottom: 8%;
+    }
+    .bubble-2,
+    .bubble-5 {
+        top:30%;
+    }
+    .bubble-3 > div {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .bubble-4 > div {
+        margin-right: auto;
+        margin-left: 0;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    .banner-content h1 {
+        font-size: 44px;
+        line-height: 60px;
+    }
+    .header-section .navbar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 20;
+    }
+    .banner-content-wrapper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        bottom: 15%;
+    }
+    .service-list-box {
+        margin-left: 34px;
+    }
+    .solution-content .center-circle h3 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    /* === CSS for Contact section === */
+    .contact-form-bg {
+        max-width: 663px;
+        width: 100%;
+    }
+    .contact-form-wrapper {
+        max-width: calc(100% - 663px);
+        width: 100%;
+        background-color:#84C4BB; 
+    }
+    /* === End CSS for Contact section === */
 }
 
 @media (min-width: 1024px) {
     /* === CSS for Common Text === */
-    .heading.md > h2 {
-        font-size: 32px;
-        line-height: 40px;
-    }
     .heading.md > h3 {
         font-size: 28px;
         line-height: 40px;
@@ -111,6 +212,65 @@
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
+    .header-section .navbar-brand {
+        max-width: 234px;
+        height: 70px;
+    }
+    .banner-bg-lg-text h2 {
+        color: #fff;
+    }
+    .banner-bg-wrapper {
+        display: none;
+    }
+    .banner-section {
+        color:#fff;
+        padding: 200px 0 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../images/banner.png);
+        z-index: 10;
+        position: relative;
+    }
+    .banner-section:before {
+        content:'';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0,.6);
+        z-index: 1;
+    }
+    .banner-content-wrapper > div {
+        position: relative;
+        z-index: 15;
+    }
+    /* === CSS for Contact section === */
+    .contact-form-bg {
+        display: none;
+    }
+    .contact-form-wrapper {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../images/contact-bg.png);
+    }
+    .contact-form-wrapper:before {
+        content:'';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(131, 195, 187,.9);
+        z-index: 1;
+    }
+    .contact-form-wrapper > div {
+        position: relative;
+        z-index: 9;
+    }
+    /* === End CSS for Contact section === */
 }
 
 @media (max-width: 991.98px) and (orientation: landscape) {
@@ -127,8 +287,54 @@
 @media (max-width: 1024px) and (orientation: portrait) {
 }
 
+@media (max-width: 768px) {
+    .services-section {
+        padding: 60px 0 45px;
+    }
+    .categories-slider-wrapper,
+    .pricing-section {
+        padding: 40px 0 60px;
+    }
+    .solution-section, .testimonials-section {
+        padding: 40px 0;
+    }
+    .pricing-box-wrapper {
+        padding-top: 25px;
+    }
+    .footer-section {
+        padding: 25px 0 30px;
+    }
+    .footer-logo {
+        max-width: 100px;
+    }
+}
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .header-section .navbar-brand {
+        max-width: 194px;
+        height: 57px;
+    }
+    .pricing-box {
+        margin: 15px auto;
+        max-width: 420px;
+    }
+    .banner-content-wrapper {
+        padding: 140px 0 100px;
+    }
+    .bubble-box {
+        text-align: center;
+        width: 50%;
+        padding: 15px 10px;
+    }
+    .solution-content {
+        flex-wrap: wrap
+    }
+    .bubbles {
+        margin: 10px auto;
+    }
+    .bubble-box > span {
+        margin: 0 auto;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

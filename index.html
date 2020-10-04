@@ -8,13 +8,15 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
         <!-- Intelligiacloud Favicon -->
-        <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+        <link rel="icon" type="image/png" href="assets/images/favicon.ico"/>
         
         <!-- Title fo the Page -->
         <title>Welcome to Webappshala</title>
-
-        <!-- Include Google Montserrat Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+        <!-- Include Google Open Sans Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+        <!-- Include Google Raleway Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -24,6 +26,9 @@
 
         <!-- Aos Animation CSS -->
         <link rel="stylesheet" href="assets/css/aos.min.css">
+
+        <!-- Slick Slider -->
+        <link rel="stylesheet" href="assets/css/slick.css">
         
         <!-- Custom Style -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -34,64 +39,633 @@
     </head>
     <body>
         <!-- Main Content Sections -->
-
+        <header class="header-section">
+            <div class="container position-relative">
+                <nav class="navbar px-0">
+                    <a class="navbar-brand d-inline-block pt-lg-3" href="index.html">
+                        <img src="assets/images/logo.png" alt="Webappshala" class="img-fluid">
+                    </a>
+                </nav>
+            </div>
+        </header>
         <!-- Banner Section -->
-        <section class="banner-section" style="background-image: url('assets/images/banner-bg.png')">
-            <div class="container">
-                <div class="banner-content text-white d-flex justify-content-center flex-column">
-                    <h2 class="banner-heading" data-aos="fade-right"
-                    data-aos-duration="1500">
-                        <div>
-                            <span class="font-weight-light">Unified</span><span class="font-weight-bold"> Analytics</span> 
-                            <span class="font-weight-light">&amp;</span><span class="font-weight-bold"> Automation</span> 
-                        </div>
-                        <div>
-                            <span class="font-weight-light">for next</span> 
-                            <span class="font-weight-light">generation enterprise</span>
-                        </div>
-                    </h2>
-                    <!-- <div class="font-16 pt-2 pb-3">
-                        <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="50">We Help realize your “Digital dream”  by eliminating the key challenges around technology complexity and associated costs.</p>
-                    </div> -->
-                    <div class="pt-2 mt-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-                        <a href="javascript:void(0)" class="btn btn-pink">Explore Now
-                            <span class="d-inline-block"><img src="assets/images/right-arrow.png" alt="Arrow" class="img-fluid arrow-motion"></span>
-                        </a>
+        <section class="banner-section position-relative overflow-hidden">
+            <div class="banner-bg-lg-text disable-selection">
+                <h2 class="tracking-in-contract-bck">
+                    Web <br> & Mobile <br> Development
+                </h2>
+            </div>
+            <div class="banner-bg-wrapper row mx-0">
+                <div class="col-12 col-lg-6 px-0">
+                    <div class="dotted-bg" style="background-image: url(assets/images/dotted-bg.png)"></div>
+                </div>
+                <div class="col-12 col-lg-6 px-0 black-overlay overflow-hidden">
+                    <div class="banner-bg kenburns-left" style="background-image: url(assets/images/banner.png)"></div>    
+                </div>
+            </div>
+            <div class="banner-content-wrapper">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1 data-aos="fade-up" data-aos-duration="1000">
+                            <span class="font-weight-extraBold">Analyze & Find the <br>
+                            Project Solutions <br></span>
+                            <span class="font-weight-normal">for Business</span>
+                        </h1>
+                        <p class="py-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">Nam non sapien purus. Maecenas felis mi, ultrices non massa ultricies tincidunt metus. Quisque incidunt varius.</p>
+                        <a href="#detailSection" class="btn btn-primary mt-md-3" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">Explore more</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End Banner Section -->
 
+        <!-- Service List Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="sections-header text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="tag text-fadeGrey font-weight-bold">Core Feature</span>
+                    <div class="heading md">
+                        <h2>Provide awesome service with our tool</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-1.png" alt="Setup Your Digital Shop" class="img-fluid">
+                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Setup Your Digital Shop
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="400">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-2.png" alt="Upload your Product & Services" class="img-fluid">
+                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Upload your Product & Services
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="500">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-3.png" alt="Generate leads for your busiess" class="img-fluid">
+                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Generate leads for your busiess
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="600">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-4.png" alt="Track and manage your leads" class="img-fluid">
+                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Track and manage your leads
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="700">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-5.png" alt="Quickly send Quotation to lead" class="img-fluid">
+                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Quickly send Quotation to lead
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="800">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-6.png" alt="After this Close your lead" class="img-fluid">
+                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                After this Close your lead
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="900">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-7.png" alt="Manage your  operations daily" class="img-fluid">
+                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Manage your  operations daily
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="1000">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-8.png" alt="Create and send invoice" class="img-fluid">
+                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Create and send invoice
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Service List Section -->
+
+        <!-- Categories Slider -->
+        <section class="categories-section">
+            <div class="container">
+                <div class="categories-slider-wrapper position-relative" style="background-image: url(assets/images/category-bg.png)">
+                    <div class="sections-header text-left mx-auto px-3" data-aos="fade-in" data-aos-duration="1000">
+                        <div class="heading md mx-400 ml-0">
+                            <h2>We have pre-defined Categories to match your business</h2>
+                        </div>
+                        <p class="sub-heading mx-00 py-2">We have pre-defined categories to match your business</p>
+                        <a href="javascript:void(0)" class="text-white font-weight-semiBold">Get Started <img src="assets/images/arrow-white.png" alt="Get Started" class="img-fluid"></a>
+                    </div>
+                    <div id="categories-slider3" class="categories-slider pt-lg-5 pt-4" data-aos="fade-in" data-aos-duration="1000">
+                        <div class="MS-content">
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-1.png" alt="Home Decore" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Home Decore</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                            
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-9.png" alt="Beauty Products" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Beauty Products</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">  
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-2.png" alt="Hardware & Tools" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Hardware & Tools</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-10.png" alt="Jewellery/Ornaments" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Jewellery/Ornaments</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-3.png" alt="Fashion & Garments" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Fashion & Garments</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-11.png" alt="Catering & Event" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Catering & Event</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-4.png" alt="Safety Equipments" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Safety Equipments</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-12.png" alt="Interior Design" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Interior Design</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-5.png" alt="Furniture & Interior" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Furniture & Interior</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-13.png" alt="Retailer & Distributor" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Retailer & Distributor</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-6.png" alt="Print Media" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Print Media</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-14.png" alt="Restaurants & Cafe" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Restaurants & Cafe</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-7.png" alt="Bakery & Cake" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Bakery & Cake</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-15.png" alt="Art & Crafts" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Art & Crafts</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-8.png" alt="Education System" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Education System</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-16.png" alt="Service Providers" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Service Providers</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MS-controls">
+                            <button class="MS-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                            <button class="MS-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- End Categories Slider -->
+
+        <!-- Solution List Section -->
+        <section class="solution-section position-relative">
+            <div class="container overflow-hidden">
+                <div id="particles-js"></div>
+                <div class="count-particles">
+                    <span class="js-count-particles"></span>
+                </div>
+                <div class="solution-section-wrapper">
+                    <div class="sections-header text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <span class="tag text-fadeGrey font-weight-bold">Solutions</span>
+                        <div class="heading md">
+                            <h2>How does the solution Helps you?</h2>
+                        </div>
+                        <p class="sub-heading mx-600 mx-auto">Managed solution which helps you setup your virtual store where you can talk about your business in general and showcase your products and services.</p>
+                    </div>
+
+                    <div class="solution-content text-capitalize mx-auto d-flex justify-content-md-center mt-lg-5 mt-4" data-aos="fade-in" data-aos-duration="1000">
+                        <div class="center-circle rounded-circle text-center d-flex align-items-center justify-content-center mx-auto p-lg-4 p-3" data-aos="zoom-in" data-aos-duration="800">
+                            <h3 class="text-white">what we offer</h3>
+                        </div>
+                        <div class="bubble-box bubble-1 d-flex flex-md-row flex-column align-items-md-center text-md-right"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                            <span class="order-md-0 order-1">Easy Upload Of Product Catalog</span>
+                            <div class="bubbles order-md-1 order-0">
+                                <img src="assets/images/solution-icon-1.png" alt="Easy Upload Of Product Catalog">
+                            </div>
+                        </div>
+                        
+                        <div class="bubble-box bubble-2 d-flex flex-md-row flex-column align-items-md-center text-md-right"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">
+                            <span class="order-md-0 order-1">Get An Enquiry From Us</span>
+                            <div class="bubbles">
+                                <img src="assets/images/solution-icon-2.png" alt="Get An Enquiry From Us">
+                            </div>
+                        </div>
+                        
+                        <div class="bubble-box bubble-3 d-flex flex-column text-md-right"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900">
+                            <span class="order-1">Set Up Product Pricing</span>
+                            <div class="bubbles order-0">
+                                <img src="assets/images/solution-icon-3.png" alt="Set Up Product Pricing">
+                            </div>
+                        </div>
+                        
+                        <div class="bubble-box bubble-4 d-flex flex-column text-md-left"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900">
+                            <span class="order-1">Discounts For Customer</span>
+                            <div class="bubbles order-0">
+                                <img src="assets/images/solution-icon-4.png" alt="Discounts For Customer">
+                            </div>
+                        </div>
+
+                        <div class="bubble-box bubble-5 d-flex flex-md-row flex-column align-items-md-center justify-content-md-center text-md-left"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">
+                            <span class="order-1">Payment With Pre-Integrated Gateway</span>
+                            <div class="bubbles order-0">
+                                <img src="assets/images/solution-icon-5.png" alt="Payment With Pre-Integrated Gateway">
+                            </div>
+                        </div>
+
+                        <div class="bubble-box bubble-6 d-flex flex-md-row flex-column align-items-md-center justify-content-md-center text-md-left"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                            <span class="order-1">Downloadable Price List</span>
+                            <div class="bubbles order-0">
+                                <img src="assets/images/solution-icon-6.png" alt="Downloadable Price List">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Solution List Section -->
+
+        <!-- Pricing Table Section -->
+        <section class="pricing-section bg-fadeGrey">
+            <div class="container">
+                <div class="sections-header text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="heading md">
+                        <h2>Pricing Designed to fit your business</h2>
+                    </div>
+                </div>
+                <div class="pricing-box-wrapper d-md-flex justify-content-center align-items-center overflow-hidden" data-aos="fade-in" data-aos-duration="1000">
+                    <div class="pricing-box pricing-left w-100" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
+                        <div class="pricing-box-head text-center">
+                            <h3 class="text-uppercase">GROW</h3>
+                            <span class="caption text-fadeGrey">Recommended</span>
+                        </div>
+                        <div class="price-box text-center">
+                            <div class="price d-flex align-items-end justify-content-center">
+                                <span class="text-blue font-weight-medium">INR</span>
+                                <h2 class="text-blue font-weight-semiBold px-2">14,999</h2>
+                                <span class="font-weight-medium">/Yearly</span>
+                            </div>
+                            <div class="cut-price text-fadeGrey">
+                                INR 29,999
+                            </div>
+                        </div>
+                        <ul class="pricing-box-listing">
+                            <li class="d-flex align-items-center mb-3">
+                                Unlimited Products
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                Lead generation form
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                Lead management module
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div class="pricing-box pricing-center w-100" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div class="pricing-box-head text-center">
+                            <h3 class="text-uppercase">GROW</h3>
+                            <span class="caption">Recommended</span>
+                        </div>
+                        <div class="price-box text-center">
+                            <div class="price d-flex align-items-end justify-content-center">
+                                <span class="font-weight-medium">INR</span>
+                                <h2 class="font-weight-semiBold px-2">14,999</h2>
+                                <span class="font-weight-medium">/Yearly</span>
+                            </div>
+                            <div class="cut-price">
+                                INR 29,999
+                            </div>
+                        </div>
+                        <ul class="pricing-box-listing">
+                            <li class="d-flex align-items-center mb-3">
+                                Unlimited Products
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                Lead generation form
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                Lead management module
+                            </li>
+                        </ul>
+                        <div class="pricing-button text-center">
+                            <p class="d-block mb-2">Want to purchase it</p>
+                            <a class="btn btn-primary" href="#">Get Started Today</a>
+                        </div>
+                    </div>
+                
+                    <div class="pricing-box pricing-right w-100" data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
+                        <div class="pricing-box-head text-center">
+                            <h3 class="text-uppercase">GROW</h3>
+                            <span class="caption text-fadeGrey">Recommended</span>
+                        </div>
+                        <div class="price-box text-center">
+                            <div class="price d-flex align-items-end justify-content-center">
+                                <span class="text-blue font-weight-medium">INR</span>
+                                <h2 class="text-blue font-weight-semiBold px-2">14,999</h2>
+                                <span class="font-weight-medium">/Yearly</span>
+                            </div>
+                            <div class="cut-price text-fadeGrey">
+                                INR 29,999
+                            </div>
+                        </div>
+                        <ul class="pricing-box-listing">
+                            <li class="d-flex align-items-center mb-3">
+                                Unlimited Products
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                Lead generation form
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                Lead management module
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Pricing Table Section -->
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="sections-header text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="tag text-fadeGrey font-weight-bold">Testimonials</span>
+                    <div class="heading md">
+                        <h2>What our Client's Says?</h2>
+                    </div>
+                </div>
+                <div class="testimonials-slider-wrapper mx-auto pt-3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300"> 
+                    <div class="slider slider-for">
+                        <div class="testimonial-content text-center">
+                            <p>
+                                Etiam ut ultrices libero. Quisque ligula diam, lacinia id aliquet eu, scelerisque in massa. Nulla quis ante porttitor, ornare quam sollicitudin, tempor diam. Morbi leo arcu, fermentum at interdum sit amet, placerat vel nunc. Etiam volutpat elementum arcu non scelerisque.
+                            </p>
+                            <span class="testimonial-name font-weight-bold d-block pt-md-4 pt-3">
+                                Vestibulum ornare
+                            </span>
+                            <span class="testimonial-caption text-fadeGrey d-block">
+                                Customer
+                            </span>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis quo mollitia. Quisquam et similique omnis voluptatibus sunt placeat ipsam est explicabo soluta earum, consequatur dicta qui quasi magnam inventore!
+                            </p>
+                            <span class="testimonial-name font-weight-bold d-block pt-md-4 pt-3">
+                                Vestibulum
+                            </span>
+                            <span class="testimonial-caption text-fadeGrey d-block">
+                                Customer
+                            </span>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <p>
+                                Etiam ut ultrices libero. Quisque ligula diam, lacinia id aliquet eu, scelerisque in massa. Nulla quis ante porttitor, ornare quam sollicitudin, tempor diam. Morbi leo arcu, fermentum at interdum sit amet, placerat vel nunc. Etiam volutpat elementum arcu non scelerisque.
+                            </p>
+                            <span class="testimonial-name font-weight-bold d-block pt-md-4 pt-3">
+                                ornare
+                            </span>
+                            <span class="testimonial-caption text-fadeGrey d-block">
+                                Customer
+                            </span>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maiores aperiam, deleniti nostrum recusandae dolor cumque? Error nihil obcaecati exercitationem a harum autem qui recusandae aliquam non. Ea, dolore placeat!
+                            </p>
+                            <span class="testimonial-name font-weight-bold d-block pt-md-4 pt-3">
+                                Vestibulum
+                            </span>
+                            <span class="testimonial-caption text-fadeGrey d-block">
+                                Customer
+                            </span>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <p>
+                                Etiam ut ultrices libero. Quisque ligula diam, lacinia id aliquet eu, scelerisque in massa. Nulla quis ante porttitor, ornare quam sollicitudin, tempor diam. Morbi leo arcu, fermentum at interdum sit amet, placerat vel nunc. Etiam volutpat elementum arcu non scelerisque.
+                            </p>
+                            <span class="testimonial-name font-weight-bold d-block pt-md-4 pt-3">
+                                Vestibulum ornare
+                            </span>
+                            <span class="testimonial-caption text-fadeGrey d-block">
+                                Customer
+                            </span>
+                        </div>
+                    </div>
+                    <div class="slider slider-nav">
+                        <div>
+                            <div class="testimonial-img">
+                                <img src="assets/images/testimonial-1.png" alt="Users Review" class="img-fluid">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial-img">
+                                <img src="assets/images/testimonial-2.png" alt="Users Review" class="img-fluid">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial-img">
+                                <img src="assets/images/testimonial-3.png" alt="Users Review" class="img-fluid">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial-img">
+                                <img src="assets/images/testimonial-4.png" alt="Users Review" class="img-fluid">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial-img">
+                                <img src="assets/images/testimonial-5.png" alt="Users Review" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials Section -->
 
         <!-- Contact Us Section -->
-        <section class="contact-section" style="background-image: url('assets/images/contact-bg.png')">
+        <section class="contact-section">
             <div class="container position-relative">
-                <div class="contact-bg-text bg-text disable-selection" data-aos="zoom-in" data-aos-duration="1800">
-                    <h2>Contact</h2>
-                </div>
-                <div class="contact-block overlay-content" data-aos="fade-in" data-aos-duration="1300">
-                    <div class="heading md">
-                        <h2>Contact Us</h2>
+                <div class="contact-block d-lg-flex">
+                    <div class="contact-form-bg">
+                        <div style="background-image:url('assets/images/contact-bg.png')"></div>
                     </div>
-                    <div class="font-16 pt-2 pb-3">
-                        <p class="font-weight-light">Feel free to drop your message . We will reply you soon.</p>
+                    <div class="contact-form-wrapper position-relative px-lg-4 px-3 py-4">
+                        <div class="d-flex flex-column justify-content-center h-100 mx-400 mx-auto">
+                            <div class="heading md">
+                                <h2 class="text-white text-capitalize pb-3 pb-md-4">Wish to own a digital shop?</h2>
+                            </div>
+                            <form id="contactForm" action="" method="POST" class="contact-form w-100 pt-1">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inputName" placeholder="Type your full name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="inputEmail1" placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="inputQuery" placeholder="Select your query type">
+                                        <option>Option 1</option>
+                                        <option>Option 1</option>
+                                        <option>Option 1</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="textarea1" rows="3" placeholder="Write your query here..."></textarea>
+                                </div>
+                                <div class="pt-1">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <form id="contactForm" action="" method="POST" class="contact-form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="inputName" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="inputEmail1" aria-describedby="email" placeholder="Email Address">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" id="textarea1" rows="3" placeholder="Your Query"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-pink">Submit</button>
-                    </form>
+                    
                 </div>
             </div>
         </section>
@@ -102,15 +676,32 @@
 
         <!-- Footer Section -->
         <footer class="footer-section text-center">
-            <div class="container">
-                <div class="copyright-texxt pt-2">
-                    <p>2020 © intelligiacloud.com. All rights reserved.</p>
+            <div class="container position-relative">
+                <a class="footer-logo d-inline-block" href="javascript:void(0)">
+                    <img src="assets/images/footer-logo.png" alt="Webappshala" class="img-fluid">
+                </a>
+                <div class="footer-info">
+                    <p>
+                        <span>Meet Us At:</span> 
+                        <span class="font-weight-semiBold"> 
+                             Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016
+                        </span>
+                    </p>
+                    <p>
+                        <span>Call Us On:</span> 
+                        <span class="font-weight-semiBold"> +91 6390 644 702 / +91 6390 500 008</span>
+                    </p>
+                    <p>
+                        <span>Reach Us At: </span> 
+                        <span class="font-weight-semiBold">team@team.com</span>
+                    </p>
+                    <p class="copyright-text position-relative text-fadeGrey pt-3 mt-3">Copyright 2020. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
         <!-- End Footer Section -->
 
-        <div class="back-to-top rounded-circle">
+        <div class="back-to-top">
             <span></span>
         </div>
 
@@ -124,6 +715,15 @@
 
         <!-- Aos JS -->
         <script src="assets/js/aos.min.js"></script>
+
+        <!-- Slick Slider JS -->
+        <script src="assets/js/slick.min.js"></script>
+
+        <!-- Multislider JS -->
+        <script src="assets/js/multislider.min.js"></script>
+
+        <!-- Partical JS -->
+        <script src="assets/js/particles.min.js"></script>
 
         <!-- Custom Js -->
         <script src="assets/js/custom.js"></script>

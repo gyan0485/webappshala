@@ -4,24 +4,24 @@
     padding: 0;
 }
 ::-webkit-selection { 
-    background: rgba(87, 147, 206,.4);
+    background: rgba(0, 175, 240, .4);
     color: #000; 
 }
 ::-ms-selection { 
-    background: rgba(87, 147, 206,.4);
+    background: rgba(0, 175, 240, .4);
     color: #000; 
 }
 ::-moz-selection { 
-    background: rgba(87, 147, 206,.4);
+    background: rgba(0, 175, 240, .4);
     color: #000; 
 }
 ::selection { 
-    background: rgba(87, 147, 206,.4);
+    background: rgba(0, 175, 240, .4);
     color: #000; 
 }
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
     color:#000000;
     line-height: 1.5;
     font-weight: 400;
@@ -44,35 +44,45 @@ a:focus {
     outline: 0;
 }
 .container {
-    max-width: 1350px;
+    max-width: 1270px;
 }
 
+/* === CSS for Colors === */
+.text-fadeGrey {
+    color: #979797!important;
+}
+.text-blue {
+    color: #00AFF0!important;
+}
+/* === End CSS for Colors === */
+
 /* === CSS for Background Colors === */
+.bg-fadeBlue {
+    background-color: #84C4BB!important;
+}
+.bg-fadeGrey {
+    background-color: #F8F8F8!important;
+}
 /* === CSS for Background Colors === */
 
 /* === CSS for Buttons === */
 .btn {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     text-transform: uppercase;
-    border-radius: 50px;
-    padding: 9px 38px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 12px 30px;
+    min-width: 157px;
+    border-color:transparent;
 }
-.btn:hover {
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    transform: scale(1.03);
+.btn-primary {
+    background: -webkit-linear-gradient(to left, #F37016, #F0A110);
+    background: linear-gradient(to left, #F37016, #F0A110);
 }
-.btn-pink {
-    background-color: #FF8080;
+.btn-primary:hover {
     color: #fff;
-}
-.btn-pink:hover,
-.btn-pink:focus,
-.btn-pink:active {
-    background-color: #5793ce;
-    color: #fff;
+    border-color: transparent;
 }
 /* === CSS for Buttons === */
 
@@ -121,36 +131,106 @@ a:focus {
     position: absolute;
     z-index: 0;
 }
+.cursor-pointer {
+    cursor: pointer;
+}
+.mx-100 {
+    max-width: 100px!important;
+}
+.mx-150 {
+    max-width: 150px!important;
+}
+.mx-220 {
+    max-width: 220px!important;
+}
+.mx-250 {
+    max-width: 250px!important;
+}
+.mx-300 {
+    max-width: 300px!important;
+}
+.mx-400 {
+    max-width: 400px!important;
+}
+.mx-500 {
+    max-width: 500px!important;
+}
+.mx-600 {
+    max-width: 600px!important;
+}
+.mx-700 {
+    max-width: 700px!important;
+}
+.mx-800 {
+    max-width: 800px!important;
+}
+.mx-1000 {
+    max-width: 1000px!important;
+}
+.form-control::placeholder {
+    color:#fff;
+}
+.form-control:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    border:1px solid #fff;
+}
+.form-control {
+    height: calc(2em + .75rem + 2px);
+    padding: 11px 18px;
+    font-size: 12px;
+    color:#fff;
+    background-color: transparent;
+    border:1px solid #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.sections-header .heading {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto; 
+    text-transform: capitalize;
+}
 /* === End Common CSS === */
 
-/* === CSS for Header section === */
-/* === End CSS for Header section === */
+/* === CSS for JC Header === */
+.header-section .navbar-brand {
+    max-width: 324px;
+}
+/* === End CSS for JC Header === */
 
-/* === CSS for Contact section === */
-/* === End CSS for Contact section === */
-
-/* === CSS for Footer section === */
-footer {
-    font-size: 12px;
-    padding: 30px 0;
+/* === CSS for JC Footer === */
+.footer-section {
+    font-family: 'Open Sans', sans-serif;
+    padding: 45px 0 60px; 
+}
+.footer-logo {
+    max-width: 126px;
+}
+.copyright-text:before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #efefef;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    max-width: 60px;
+    margin: 0 auto;
 }
 footer * {
-    font-weight: 300;
+    font-size:10px;
+    line-height: 18px;
 }
-.footer-links ul li {
-    display: inline-block;
-    padding: 0 10px;
+.footer-info {
+    margin-top: -12px;
 }
-.footer-links ul li a {
-    color: #000;
-}
-.footer-links ul li a:hover {
-    color: #FF8080;
-}
-/* === End CSS for Footer section === */
+/* === End CSS for JC Footer === */
 
-
-/* ========== CSS for Back To Top Button ========== */
+/* === CSS for Back To Top Button === */
 .back-to-top {
     position: fixed;
     bottom: 20px;
@@ -162,7 +242,9 @@ footer * {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    background-color: #e65757;
+    background-color: #2faff0;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
     -webkit-transition: all .35s ease-in-out;
     -ms-transition: all .35s ease-in-out;
     -moz-transition: all .35s ease-in-out;
@@ -193,9 +275,348 @@ footer * {
     -moz-transform: scale(1.15);
     transform: scale(1.15);
 }
-/* ========== End CSS for Back To Top Button ========== */
+/* === End CSS for Back To Top Button === */
+
+/* === CSS for Banner Section === */
+.banner-bg-lg-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    max-width: 1360px;
+    margin: 0 auto;
+    z-index: 10;
+    opacity: .04;
+}
+.banner-bg-lg-text h2 {
+    font-size: 10vw;
+    font-weight: 800;
+    color: #003548;
+    line-height: 11vw;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 75.759%;
+    background-size: cover;
+    min-height: 600px;
+}
+.banner-content {
+    max-width: 500px;
+}
+.form-section {
+    padding-bottom: 80px;
+}
+#particles-js {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: .4;
+}
+.form-section .container {
+    z-index: 99;
+    position: relative;
+}
+.dotted-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+/* === End CSS for Banner Section === */
+
+/* === CSS for services Section === */
+.services-section {
+    padding: 100px 0 75px; 
+}
+.service-list-box {
+    padding: 40px 0 25px; 
+}
+.service-img-caption {
+    max-width: 127px;
+    display: inline-block;
+    line-height: 24px;
+    margin-top: 20px;
+}
+.service-img {
+    max-width: 70px;
+}
+/* === End CSS for services Section === */
+
+/* === CSS for pricing table Section === */
+.pricing-box {
+    max-width: 300px;
+    border: 1px solid #E9E9E9;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: #fff;
+}
+.pricing-section {
+    padding: 70px 0 100px;
+}
+.pricing-box-wrapper {
+    padding-top: 45px;
+}
+.pricing-box-head h3 {
+    color: #646464;
+    font-weight: 600;
+}
+.pricing-box-head {
+    padding: 40px 20px 20px;
+}
+.pricing-center * {
+    color: #fff!important;
+}
+.pricing-center {
+    position: relative;
+    z-index: 9;
+    border: 0!important;
+    background: -webkit-linear-gradient(#00D6C8, #00aff0);
+    background: linear-gradient(#00D6C8, #00aff0);
+    -webkit-box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
+    box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
+}
+.price-box {
+    border-bottom: 1px solid #E4E4E4;
+    border-top: 1px solid #E4E4E4;
+    padding: 30px 20px;
+}
+.cut-price {
+    padding-top: 8px;
+    font-size: 18px;
+    text-decoration: line-through;
+}
+.pricing-box-listing {
+    padding: 50px 20px;
+    max-width: 250px;
+    margin: 0 auto;
+    font-weight: 600;
+}
+.pricing-center .pricing-button {
+    border-top: 1px solid #fff;
+    padding: 30px 20px 50px;
+}
+.pricing-center .pricing-button .btn {
+    -webkit-box-shadow: 0px 0px 10px #006B92;
+    box-shadow: 0px 0px 10px #006B92;
+}
+.pricing-box-listing li {
+    background-image: url(../images/check-green.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 20px;
+}
+.pricing-center .pricing-box-listing li {
+    background-image: url(../images/check-white.png);
+}
+/* === End CSS for pricing table Section === */
+
+/* === CSS for testimonials Section === */
+.solution-section,
+.testimonials-section {
+    padding: 100px 0;
+}
+.testimonial-img {
+    width: 71px;
+    height: 71px;
+    margin: 45px auto 10px;
+}
+.testimonial-name {
+    color:#004B67;
+}
+.testimonials-slider-wrapper {
+    max-width: 870px;
+}
+.slick-slide:focus {
+    outline: 0;
+}
+/* === End CSS for testimonials Section === */
+
+/* === CSS for Solutions section === */
+.solution-content .center-circle {
+    height: 160px;
+    width: 160px;
+    background: #00AFF0;
+    position: relative;
+}
+.solution-content .center-circle:before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    top:8px;
+    border:1px dashed #fff;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    z-index: 9;
+}
+.bubbles {
+    padding: 10px;
+    margin: 12px;
+    border: 1px solid #E9E9E9;
+    background: #fff;
+    height: 78px;
+    width: 78px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.bubble-box > span {
+    max-width: 110px;
+    font-weight: 700;
+}
+.solution-section-wrapper {
+    position: relative;
+    z-index: 10;
+}
+/* === End CSS for Solutions section === */
+
+/* === CSS for Categories Section === */
+
+.categories-slider-wrapper {
+    padding: 70px 0 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.categories-section .sections-header {
+    max-width: 1130px;
+    color:#fff;
+}
+.categories-section .sections-header img {
+    width: 16px;
+    height: 8px;
+}
+.categories-slider .MS-content {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.categories-slider .MS-content .item {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    vertical-align: top;
+}
+.categories-box {
+    padding: 10px;
+}
+.categories-box:first-child {
+    margin-left: -55px;
+}
+.categories-box > div {
+    width: 150px;
+    height: 170px;
+    background: #fff;
+    padding:50px 10px 25px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.category-caption {
+    font-size: 12px;
+    font-weight: 700;
+    color: #585858;
+    display: block;
+}
+.category-arrow {
+    background-image: url(../images/arrow-blue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+}
+  
+.categories-slider .MS-controls button {
+    position: absolute;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    outline: 0;
+    top: 35px;
+}
+@media (max-width: 767px) {
+    .categories-slider .MS-controls button {
+      display: none;
+    }
+}
+.categories-slider .MS-controls .MS-left {
+    left: 10px;
+}
+@media (max-width: 992px) {
+    .categories-slider .MS-controls .MS-left {
+      left: -2px;
+    }
+}
+.categories-slider .MS-controls .MS-right {
+    right: 10px;
+}
+/* === End CSS for Categories Section === */
+
+/* === CSS for Contact section === */
+.contact-form-bg > div {
+    padding-bottom: 93%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* === End CSS for Contact section === */
+
+
 
 /* === CSS for Custom Animation === */
+
+/* ---- particles.js container ---- */
+/* ---- stats.js ---- */
+/* 
+.count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+} */
+
+.js-count-particles{
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+    -webkit-user-select: none;
+}
+
+#stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles{
+    border-radius: 0 0 3px 3px;
+}
+
 .animation-delay-2ms {
     -webkit-animation-delay: 0.2s!important;
     -moz-animation-delay: 0.2s!important;
@@ -237,4 +658,78 @@ footer * {
     -moz-animation-delay: 0.8s!important;
     -ms-animation-delay: 0.8s!important;
     animation-delay: 0.8s!important;
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}
+@keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}
+  
+.tracking-in-contract-bck {
+	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+  
+
+
+@-webkit-keyframes kenburns-left {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 16% 50%;
+              transform-origin: 16% 50%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translate(-20px, 15px);
+              transform: scale(1.25) translate(-20px, 15px);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+    }
+  }
+  @keyframes kenburns-left {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 16% 50%;
+              transform-origin: 16% 50%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translate(-20px, 15px);
+              transform: scale(1.25) translate(-20px, 15px);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+    }
+  }
+
+.kenburns-left {
+	-webkit-animation: kenburns-left 8s cubic-bezier(0.33, 0.25, 0.49, 0.81) both;
+	        animation: kenburns-left 8s cubic-bezier(0.33, 0.25, 0.49, 0.81) both;
 }
