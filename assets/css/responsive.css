@@ -225,12 +225,19 @@
     .banner-section {
         color:#fff;
         padding: 200px 0 150px;
+        z-index: 10;
+        position: relative;
+    }
+    .banner-section .mobile-bg {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url(../images/banner.png);
-        z-index: 10;
-        position: relative;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
     .banner-section:before {
         content:'';
@@ -314,12 +321,16 @@
         max-width: 194px;
         height: 57px;
     }
+    .banner-bg-lg-text {
+        bottom: 0;
+    }
+    .banner-bg-lg-text h2 {
+        font-size: 70px;
+        line-height: 80px;
+    }
     .pricing-box {
         margin: 15px auto;
         max-width: 420px;
-    }
-    .banner-content-wrapper {
-        padding: 140px 0 100px;
     }
     .bubble-box {
         text-align: center;
@@ -334,6 +345,13 @@
     }
     .bubble-box > span {
         margin: 0 auto;
+    }
+    .solution-content {
+        max-width: 359px;
+    }
+    .center-circle {
+        width: 180px!important;
+        height: 180px!important;
     }
 }
 
