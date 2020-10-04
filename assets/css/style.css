@@ -353,6 +353,7 @@ footer * {
 /* === CSS for pricing table Section === */
 .pricing-box {
     max-width: 300px;
+    min-width: 250px;
     border: 1px solid #E9E9E9;
     -webkit-border-radius: 20px;
     border-radius: 20px;
@@ -367,6 +368,7 @@ footer * {
 .pricing-box-head h3 {
     color: #646464;
     font-weight: 600;
+    font-size: 24px;
 }
 .pricing-box-head {
     padding: 40px 20px 20px;
@@ -416,6 +418,13 @@ footer * {
 .pricing-center .pricing-box-listing li {
     background-image: url(../images/check-white.png);
 }
+.pricing-left {
+    margin-right: -20px;
+}
+.pricing-right {
+    margin-left: -20px;
+}
+
 /* === End CSS for pricing table Section === */
 
 /* === CSS for testimonials Section === */
@@ -436,6 +445,24 @@ footer * {
 }
 .slick-slide:focus {
     outline: 0;
+}
+.slick-dots > li {
+    display: inline-block;
+    margin: 0 2px;
+}
+.slick-dots {
+    text-align: center;
+}
+.slick-dots > li button {
+    font-size: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    border: 0;
+    background: #d9d8d8;
+}
+.slick-dots > li.slick-active button {
+    background: #0f4b67;
 }
 /* === End CSS for testimonials Section === */
 

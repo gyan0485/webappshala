@@ -35,7 +35,7 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		asNavFor: '.slider-for',
-		dots: false,
+		dots: true,
 		centerMode: true,
 		focusOnSelect: true,
 		responsive: [
