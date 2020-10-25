@@ -394,7 +394,17 @@
     .pricing-box-wrapper {
         max-width: 310px;
     }
-    
+    .pricing-box {
+        max-width: 290px;
+        min-width: 250px;
+        margin-left: auto;
+    }
+
+    .pricing-box-wrapper .slick-track > .slick-slide:last-child  .pricing-box {
+        margin-left: auto;
+        margin-right: auto
+    }
+
     .slider.center .slick-current .pricing-box {
         border: 0!important;
         background: -webkit-linear-gradient(#00D6C8, #00aff0);
@@ -411,5 +421,41 @@
     }
     .slider.center .slick-current .pricing-box-listing li {
         background-image: url(../images/check-white.png);
+    }
+
+    .slick-arrow {
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 0;
+        position: absolute;
+        bottom: -10px;
+    }
+    .slick-arrow:focus {
+        outline: 0!important;
+    }
+    .slick-prev {
+        left: 43%;
+        width: 0;
+        height: 0;
+        border-left: 0 solid transparent;
+        border-right: 15px solid #f17133;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    .slick-next {
+        right: 43%;
+        width: 0;
+        height: 0;
+        border-right: 0 solid transparent;
+        border-left: 15px solid #f17133;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
     }
 }
