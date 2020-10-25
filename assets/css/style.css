@@ -352,7 +352,7 @@ footer * {
 
 /* === CSS for pricing table Section === */
 .pricing-box {
-    max-width: 300px;
+    max-width: 320px;
     min-width: 250px;
     border: 1px solid #E9E9E9;
     -webkit-border-radius: 20px;
@@ -373,17 +373,9 @@ footer * {
 .pricing-box-head {
     padding: 40px 20px 20px;
 }
-.pricing-center * {
-    color: #fff!important;
-}
 .pricing-center {
     position: relative;
     z-index: 9;
-    border: 0!important;
-    background: -webkit-linear-gradient(#00D6C8, #00aff0);
-    background: linear-gradient(#00D6C8, #00aff0);
-    -webkit-box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
-    box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
 }
 .price-box {
     border-bottom: 1px solid #E4E4E4;
@@ -418,7 +410,24 @@ footer * {
 .pricing-center .pricing-box-listing li {
     background-image: url(../images/check-white.png);
 }
-.pricing-left {
+.pricing-box-wrapper {
+    max-width: 900px;
+    margin: auto;
+    /* overflow: hidden; */
+}
+/* .pricing-box-wrapper > .slider.center {
+    margin-right: -25px;
+} */
+.pricing-box-wrapper .slick-track {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    padding: 24px 0;
+}
+.pricing-box-wrapper .slick-track > .slick-slide:first-child {
     margin-right: -20px;
 }
 .pricing-right {

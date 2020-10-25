@@ -44,6 +44,20 @@
     }
 }
 
+@media (min-width: 480px) {
+    .pricing-center * {
+        color: #fff!important;
+    }
+    .pricing-center {
+        position: relative;
+        z-index: 9;
+        border: 0!important;
+        background: -webkit-linear-gradient(#00D6C8, #00aff0);
+        background: linear-gradient(#00D6C8, #00aff0);
+        -webkit-box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
+        box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
+    }
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
@@ -374,5 +388,28 @@
 @media (max-width: 575.98px) {
     .footer-logo {
         max-width:70px;
+    }
+}
+@media (max-width: 479.98px) {
+    .pricing-box-wrapper {
+        max-width: 310px;
+    }
+    
+    .slider.center .slick-current .pricing-box {
+        border: 0!important;
+        background: -webkit-linear-gradient(#00D6C8, #00aff0);
+        background: linear-gradient(#00D6C8, #00aff0);
+        -webkit-box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
+        box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
+    }
+    .slider.center .slick-current > *,
+    .slider.center .slick-current h3,
+    .slider.center .slick-current .caption,
+    .slider.center .slick-current .text-blue,
+    .slider.center .slick-current .cut-price {
+        color: #fff!important;
+    }
+    .slider.center .slick-current .pricing-box-listing li {
+        background-image: url(../images/check-white.png);
     }
 }
