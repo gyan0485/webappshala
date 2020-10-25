@@ -401,7 +401,6 @@
     }
 
     .pricing-box-wrapper .slick-track > .slick-slide:last-child  .pricing-box {
-        margin-left: auto;
         margin-right: auto
     }
 
