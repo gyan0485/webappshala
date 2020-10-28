@@ -398,6 +398,7 @@
         max-width: 290px;
         min-width: 250px;
         margin-left: auto;
+        margin-right: auto;
     }
 
     .pricing-box-wrapper .slick-track > .slick-slide:last-child  .pricing-box {
@@ -408,8 +409,8 @@
         border: 0!important;
         background: -webkit-linear-gradient(#00D6C8, #00aff0);
         background: linear-gradient(#00D6C8, #00aff0);
-        -webkit-box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
-        box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
+        -webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.19);
+        box-shadow: 0px 0px 6px rgba(0,0,0,0.19);
     }
     .slider.center .slick-current > *,
     .slider.center .slick-current h3,
