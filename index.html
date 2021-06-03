@@ -8,25 +8,27 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
         <!-- Intelligiacloud Favicon -->
-        <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+        <link rel="icon" type="image/png" href="assets/images/favicon.ico"/>
         
         <!-- Title fo the Page -->
-        <title>Welcome to Intelligiacloud</title>
-
-        <!-- Include Google Montserrat Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <title>Welcome to Webappshala</title>
+    
+        <!-- Include Google Open Sans Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+        <!-- Include Google Raleway Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-        <!-- Mega Menu CSS -->
-        <link rel="stylesheet" href="assets/css/hs.megamenu.css">
 
         <!-- Animate CSS -->
         <link rel="stylesheet" href="assets/css/animate.min.css">
 
         <!-- Aos Animation CSS -->
         <link rel="stylesheet" href="assets/css/aos.min.css">
+
+        <!-- Slick Slider -->
+        <link rel="stylesheet" href="assets/css/slick.css">
         
         <!-- Custom Style -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -36,412 +38,641 @@
         
     </head>
     <body>
-        <!-- Header Section -->
-        <header id="header" class="header-section u-header u-header--abs-top-lg u-header--bg-transparent u-header--show-hide-lg" data-header-fix-moment="500" data-header-fix-effect="slide">
-            <div class="u-header__section">
-                <div id="logoAndNav">
-                    <!-- Nav -->
-                    <nav class="js-mega-menu js-mega-menu-basic navbar navbar-expand-lg u-header__navbar hs-menu-initialized hs-menu-horizontal fixed-top">
-                        <div class="container">
-                            <div class="d-flex align-items-center">
-                                <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center p-0" href="index.html" aria-label="Front">
-                                    <img src="assets/images/logo.png" alt="Intelligiacloud">
-                                </a>
-                            </div>
-                            <div class="d-flex align-items-center flex-row-reverse">
-                                <button class="navbar-toggler shadow-none rounded-0 pt-0 px-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-                                    <span class="toggle-icon"></span>
-                                    <span class="toggle-icon"></span>
-                                    <span class="toggle-icon"></span>
-                                </button>
-                            </div>
-                            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse justify-content-end">
-                                <ul class="navbar-nav u-header__navbar-nav">
-
-                                    <li class="nav-item u-header__nav-item u-header__nav-last-item active">
-                                        <a href="index.html" class="nav-link u-header__nav-link">Home</a>
-                                    </li>
-                                    <li class="nav-item u-header__nav-item u-header__nav-last-item">
-                                        <a href="#" class="nav-link u-header__nav-link">About Us</a>
-                                    </li>
-
-                                    <!-- Our Products -->
-                                    <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
-                                        <a id="productMegaMenu" class="nav-link u-header__nav-link" href="javascript:void(0)">Our Products</a>
-                                        <span class="u-header__nav-link-toggle u-header__nav-link-icon" aria-haspopup="true" aria-expanded="false" aria-labelledby="productSubMenu"></span>
-                                        <!-- About - Submenu -->
-                                        <ul id="productSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer animated fadeOut" aria-labelledby="productMegaMenu" style="min-width: 180px; display: none;">
-                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="our-product.html">Our Products 1</a></li>
-                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="our-product.html">Our Products 2</a></li>
-                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="our-product.html">Our Products 3</a></li>
-                                        </ul>
-                                        <!-- End Submenu -->
-                                    </li>
-                                    <!-- End Our Products -->
-        
-                                    <li class="nav-item u-header__nav-item u-header__nav-last-item">
-                                        <a href="#" class="nav-link u-header__nav-link">Request a demo</a>
-                                    </li>
-                                    <li class="nav-item u-header__nav-item u-header__nav-last-item">
-                                        <a href="#" class="nav-link u-header__nav-link">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    <!-- End Nav -->
-                </div>
+        <!-- Main Content Sections -->
+        <header class="header-section">
+            <div class="container position-relative">
+                <nav class="navbar px-0">
+                    <a class="navbar-brand d-inline-block pt-lg-3" href="index.html">
+                        <img src="assets/images/logo.png" alt="Webappshala" class="img-fluid">
+                    </a>
+                </nav>
             </div>
         </header>
-         <!--End Header Section -->
-
-        <!-- Main Content Sections -->
-
         <!-- Banner Section -->
-        <section class="banner-section" style="background-image: url('assets/images/banner-bg.png')">
-            <div class="container">
-                <div class="banner-content text-white d-flex justify-content-center flex-column">
-                    <h2 class="banner-heading" data-aos="fade-right"
-                    data-aos-duration="1500">
-                        <div>
-                            <span class="font-weight-light">Unified</span><span class="font-weight-bold"> Analytics</span> 
-                            <span class="font-weight-light">&amp;</span><span class="font-weight-bold"> Automation</span> 
-                        </div>
-                        <div>
-                            <span class="font-weight-light">for next</span> 
-                            <span class="font-weight-light">generation enterprise</span>
-                        </div>
-                    </h2>
-                    <!-- <div class="font-16 pt-2 pb-3">
-                        <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="50">We Help realize your “Digital dream”  by eliminating the key challenges around technology complexity and associated costs.</p>
-                    </div> -->
-                    <div class="pt-2 mt-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-                        <a href="javascript:void(0)" class="btn btn-pink">Explore Now
-                            <span class="d-inline-block"><img src="assets/images/right-arrow.png" alt="Arrow" class="img-fluid arrow-motion"></span>
-                        </a>
+        <section class="banner-section position-relative overflow-hidden">
+            <div class="mobile-bg d-lg-none kenburns-left"></div>
+            <div class="banner-bg-lg-text disable-selection">
+                <h2 class="tracking-in-contract-bck">
+                    Web <br> & Mobile <br> Development
+                </h2>
+            </div>
+            <div class="banner-bg-wrapper row mx-0">
+                <div class="col-12 col-lg-6 px-0">
+                    <div class="dotted-bg" style="background-image: url(assets/images/dotted-bg.png)"></div>
+                </div>
+                <div class="col-12 col-lg-6 px-0 black-overlay overflow-hidden">
+                    <div class="banner-bg kenburns-left" style="background-image: url(assets/images/banner.png)"></div>    
+                </div>
+            </div>
+            <div class="banner-content-wrapper">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1 data-aos="fade-up" data-aos-duration="1000">
+                            <span class="font-weight-extraBold">Analyze & Find the <br>
+                            Project Solutions <br></span>
+                            <span class="font-weight-normal">for Business</span>
+                        </h1>
+                        <p class="py-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">Nam non sapien purus. Maecenas felis mi, ultrices non massa ultricies tincidunt metus. Quisque incidunt varius.</p>
+                        <a href="#detailSection" class="btn btn-primary mt-md-3" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">Explore more</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End Banner Section -->
 
-
-        <!-- About The Intelligiacloud Section -->
-        <section class="abt-section bg-fadeBlue text-center">
-            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
-                <div class="heading md font-weight-medium">
-                    <h2 class="font-weight-bold">About The Intelligiacloud</h2>
-                </div>
-                <div class="font-18 font-weight-light py-md-4 py-3 my-2">
-                    <p>Born in the Industry 4.0 era, IntelligiaCloud is a team of believers with a singular focus –  Help realize your “Digital dream”  by eliminating the key challenges around technology complexity and associated costs. Our highly experienced , in-house development engine at core delivers cutting edge software solutions that deliver the  ability to resolve both common and complex issues in Application down  IT infrastructure management. Our collective learning is reflected through our product suite based on next generation technologies to help customers across the business verticals and sizes as we continue to embrace continuous innovation. The way we do it is by offering production ready solutions and consulting services  so that the businesses remain focused on scale and profitability and let us handle the rest. We deliver technology that brings in business agility, resilience, cost effectiveness and superior end user experience and without any trade-offs.</p>
-                </div>
-                <a href="javascript:void(0)" class="btn btn-pink">Know More</a>
-            </div>
-        </section>
-        <!-- End About The Intelligiacloud Section -->
-
-        <!-- Our Produect Section -->
-        <section class="products-section-heading text-center overflow-hidden">
+        <!-- Service List Section -->
+        <section class="services-section">
             <div class="container">
-                <h2 data-aos="flip-up" data-aos-duration="1000">Our Products</h2>
-            </div>
-        </section>
-        <section class="products-section">
-            <!-- Product 1 -->
-            <div class="product-item">
-                
-                <div class="container">
-                    <div class="row product-block">
-                        <div class="col-12 col-md-4">
-                            <div class="product-img overlay-content" data-aos="fade-in" data-aos-duration="1300">
-                                <div class="img-block" style="background-image: url('assets/images/product-img-1.png')">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-8">
-                            <div class="product-bg-text bg-text disable-selection" data-aos="zoom-in" data-aos-duration="1500">
-                                <h2 >Product</h2>
-                            </div>
-                            <div class="product-content overlay-content d-flex align-items-start pt-4">
-                                <div class="product-count" data-aos="zoom-in" data-aos-duration="1300">
-                                    01
-                                </div>
-                                <div class="product-details" data-aos="fade-up" data-aos-duration="1500">
-                                    <div class="heading md">
-                                        <h2>FinOps</h2>
-                                        <h3 class="pt-md-3 pt-2 pb-2">Challenges/Problem statement</h3>
-                                    </div>
-                                    <div class="product-description font-24 font-weight-light">
-                                        <p>Public cloud continues to grow in popularity and people have been inclined more and more towards the cloud offerings with many benefits for organizations such as scalability, control, security etc.</p>
-                                    </div>
-                                    <div class="pt-lg-4 pt-md-3 pt-2 mt-2">
-                                        <a href="javascript:void(0)" class="btn btn-pink">Explore</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="sections-header text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="tag text-fadeGrey font-weight-bold">Core Feature</span>
+                    <div class="heading md">
+                        <h2>Provide awesome service with our tool</h2>
                     </div>
                 </div>
-            </div>
-            <!-- Product 2 -->
-            <div class="product-item">
-                <div class="container">
-                    <div class="row product-block">
-                        <div class="col-12 col-md-4">
-                            <div class="product-img overlay-content" data-aos="fade-in" data-aos-duration="1300">
-                                <div class="img-block" style="background-image: url('assets/images/product-img-2.png')">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-8">
-                            <div class="product-bg-text bg-text disable-selection" data-aos="zoom-in" data-aos-duration="1500">
-                                <h2 >Product</h2>
-                            </div>
-                            <div class="product-content overlay-content d-flex align-items-start pt-4">
-                                <div class="product-count" data-aos="zoom-in" data-aos-duration="1300">
-                                    02
-                                </div>
-                                <div class="product-details" data-aos="fade-up" data-aos-duration="1500">
-                                    <div class="heading md">
-                                        <h2>OneSaaS</h2>
-                                        <h3 class="pt-md-3 pt-2 pb-2">Problem Statement/Challenges</h3>
-                                    </div>
-                                    <div class="product-description font-24 font-weight-light">
-                                        <p>We enable you to lifecycle manage your Enterprise SaaS applications through a unified platform to enable you aggregate Enterprise SaaS applications to right from SaaSOps to billing analytics and waste management.</p>
-                                    </div>
-                                    <div class="pt-lg-4 pt-md-3 pt-2 mt-2">
-                                        <a href="javascript:void(0)" class="btn btn-pink">Explore</a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 3 -->
-            <div class="product-item">
-                <div class="container">
-                    <div class="row product-block">
-                        <div class="col-12 col-md-4">
-                            <div class="product-img overlay-content" data-aos="fade-in" data-aos-duration="1300">
-                                <div class="img-block" style="background-image: url('assets/images/product-img-3.png')">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-8">
-                            <div class="product-bg-text bg-text disable-selection" data-aos="zoom-in" data-aos-duration="1500">
-                                <h2 >Product</h2>
-                            </div>
-                            <div class="product-content overlay-content d-flex align-items-start pt-4">
-                                <div class="product-count" data-aos="zoom-in" data-aos-duration="1300">
-                                    03
-                                </div>
-                                <div class="product-details" data-aos="fade-up" data-aos-duration="1500">
-                                    <div class="heading md">
-                                        <h2>Controlled DevOps</h2>
-                                        <h3 class="pt-md-3 pt-2 pb-2">Problem Statement/Challenges</h3>
-                                    </div>
-                                    <div class="product-description font-24 font-weight-light">
-                                        <p>A CI/CD pipeline automates your software delivery process. THE PIPELINE BUILDS CODE, runs tests (CI), and safely deploys a new version of the application (CD). Automated pipelines remove manual errors, provide</p>
-                                    </div>
-                                    <div class="pt-lg-4 pt-md-3 pt-2 mt-2">
-                                        <a href="javascript:void(0)" class="btn btn-pink">Explore</a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 4 -->
-            <div class="product-item">
-                <div class="container">
-                    <div class="row product-block">
-                        <div class="col-12 col-md-4">
-                            <div class="product-img overlay-content" data-aos="fade-in" data-aos-duration="1300">
-                                <div class="img-block" style="background-image: url('assets/images/product-img-4.png')">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-8">
-                            <div class="product-bg-text bg-text disable-selection" data-aos="zoom-in" data-aos-duration="1500">
-                                <h2 >Product</h2>
-                            </div>
-                            <div class="product-content overlay-content d-flex align-items-start pt-4">
-                                <div class="product-count" data-aos="zoom-in" data-aos-duration="1300">
-                                    04
-                                </div>
-                                <div class="product-details" data-aos="fade-up" data-aos-duration="1500">
-                                    <div class="heading md">
-                                        <h2>Certimatics</h2>
-                                        <h3 class="pt-md-3 pt-2 pb-2">Challenge/Problem Statement</h3>
-                                    </div>
-                                    <div class="product-description font-24 font-weight-light">
-                                        <p>The average global 5,000 company spends about $15 million to recover from the loss of business due to a certificate outage -- and faces another $25 million in potential compliance impact.</p>
-                                    </div>
-                                    <div class="pt-lg-4 pt-md-3 pt-2 mt-2">
-                                        <a href="javascript:void(0)" class="btn btn-pink">Explore</a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 5 -->
-            <div class="product-item">
-                <div class="container">
-                    <div class="row product-block">
-                        <div class="col-12 col-md-4">
-                            <div class="product-img overlay-content" data-aos="fade-in" data-aos-duration="1300">
-                                <div class="img-block" style="background-image: url('assets/images/product-img-5.png')">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-8">
-                            <div class="product-bg-text bg-text disable-selection" data-aos="zoom-in" data-aos-duration="1500">
-                                <h2 >Product</h2>
-                            </div>
-                            <div class="product-content overlay-content d-flex align-items-start pt-4">
-                                <div class="product-count" data-aos="zoom-in" data-aos-duration="1300">
-                                    05
-                                </div>
-                                <div class="product-details" data-aos="fade-up" data-aos-duration="1500">
-                                    <div class="heading md">
-                                        <h2>K8</h2>
-                                        <h3 class="pt-md-3 pt-2 pb-2">Problem Statement/Challenges</h3>
-                                    </div>
-                                    <div class="product-description font-24 font-weight-light">
-                                        <p>In order to be too meet the industry standards and maintain a secure presence on the INTERNET, it is mandatory for industry to be SSL Complaint and that can be achieved with infusing digitally verified certificates to our internet facing applications. But who to take care of the certs ? Who will ensure they are not expiring , and if expiring who should get it renewed ? Answer to all of this is our Solution – CertMag. If the Cert is expiring within 15 days, CertMag will automatically generate</p>
-                                    </div>
-                                    <div class="pt-lg-4 pt-md-3 pt-2 mt-2">
-                                        <a href="javascript:void(0)" class="btn btn-pink">Explore</a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Our Produect Section -->
-
-        <!-- Counting Blokcs Gradient Section -->
-        <section class="counter-sections" style="background-image: url('assets/images/gradient-bg.png')">
-            <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-3 py-3">
-                        <div class="counter-block text-center pt-1" data-aos="fade-in" data-aos-duration="800" data-aos-delay="50">
-                            <div class="counter-icon bounce animation-delay-2ms">
-                                <img src="assets/images/product.png" alt="Products">
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-1.png" alt="Setup Your Digital Shop" class="img-fluid">
                             </div>
-                            <div class="counter-text text-white">
-                                <span class="font-16 text-uppercase">Products</span>
-                                <p>04 Products</p>
-                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Setup Your Digital Shop
+                            </span>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 py-3">
-                        <div class="counter-block text-center pt-1" data-aos="fade-in" data-aos-duration="800" data-aos-delay="150">
-                            <div class="counter-icon bounce animation-delay-8ms">
-                                <img src="assets/images/repositories.png" alt="Repositories">
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="400">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-2.png" alt="Upload your Product & Services" class="img-fluid">
                             </div>
-                            <div class="counter-text text-white">
-                                <span class="font-16 text-uppercase">Repositories</span>
-                                <p>18 Repositories</p>
-                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Upload your Product & Services
+                            </span>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 py-3">
-                        <div class="counter-block text-center pt-1" data-aos="fade-in" data-aos-duration="800" data-aos-delay="250">
-                            <div class="counter-icon bounce animation-delay-7ms">
-                                <img src="assets/images/branches.png" alt="Branches">
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="500">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-3.png" alt="Generate leads for your busiess" class="img-fluid">
                             </div>
-                            <div class="counter-text text-white">
-                                <span class="font-16 text-uppercase">Branches</span>
-                                <p>102 Branches</p>
-                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Generate leads for your busiess
+                            </span>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 py-3">
-                        <div class="counter-block text-center pt-1" data-aos="fade-in" data-aos-duration="800" data-aos-delay="350">
-                            <div class="counter-icon bounce animation-delay-6ms">
-                                <img src="assets/images/code.png" alt="Line of code">
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="600">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-4.png" alt="Track and manage your leads" class="img-fluid">
                             </div>
-                            <div class="counter-text text-white">
-                                <span class="font-16 text-uppercase">Line of code</span>
-                                <p>77892 Lines</p>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Track and manage your leads
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="700">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-5.png" alt="Quickly send Quotation to lead" class="img-fluid">
                             </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Quickly send Quotation to lead
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="800">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-6.png" alt="After this Close your lead" class="img-fluid">
+                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                After this Close your lead
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="900">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-7.png" alt="Manage your  operations daily" class="img-fluid">
+                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Manage your  operations daily
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <div class="service-list-box" data-aos="fade-in" data-aos-duration="800" data-aos-delay="1000">
+                            <div class="service-img">
+                                <img src="assets/images/service-img-8.png" alt="Create and send invoice" class="img-fluid">
+                            </div>
+                            <span class="service-img-caption text-capitlize font-weight-semiBold"> 
+                                Create and send invoice
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Counting Blokcs Gradient Section -->
-        
-        <!-- Email Section -->
-        <section class="email-section">
+        <!-- End Service List Section -->
+
+        <!-- Categories Slider -->
+        <section class="categories-section">
             <div class="container">
-                <div class="email-block d-sm-flex align-items-sm-center text-white" style="background-image: url('assets/images/mail-bg.png')">
-                    <div class="email-heading-block position-relative text-center mx-auto" data-aos="zoom-in" data-aos-duration="1400">
-                        <h3 class="email-box-bg-text bg-text">Straight to <br> Your Inbox</h3>
-                        <div class="heading mx-auto">
-                            <h2 class="font-weight-bold">Straight to Your Inbox</h2>
+                <div class="categories-slider-wrapper position-relative" style="background-image: url(assets/images/category-bg.png)">
+                    <div class="sections-header text-left mx-auto px-3" data-aos="fade-in" data-aos-duration="1000">
+                        <div class="heading md mx-400 ml-0">
+                            <h2>We have pre-defined Categories to match your business</h2>
                         </div>
+                        <p class="sub-heading mx-00 py-2">We have pre-defined categories to match your business</p>
+                        <a href="javascript:void(0)" class="text-white font-weight-semiBold">Get Started <img src="assets/images/arrow-white.png" alt="Get Started" class="img-fluid"></a>
                     </div>
-                    <div class="email-field-block" data-aos="fade-left" data-aos-duration="1500">
-                        <div class="font-18 font-weight-bold">
-                            <p>Receive all the news and upcoming events & news updates straight to your inbox.</p>
-                        </div>
-                        <form id="updateForm" action="" method="POST" class="email-form pt-3 mt-md-1">
-                            <div class="form-group d-flex align-items-end">
-                                <input type="email" class="form-control" name="updateMail" id="" aria-describedby="helpId" placeholder="Enter Email">
-                                <div class="pl-3">
-                                    <button type="button" class="btn-send transition-3ms ml-lg-1">
-                                        <img src="assets/images/btn-send.png" alt="Send" class="img-fluid">
-                                    </button>
+                    <div id="categories-slider3" class="categories-slider pt-lg-5 pt-4" data-aos="fade-in" data-aos-duration="1000">
+                        <div class="MS-content">
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-1.png" alt="Home Decore" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Home Decore</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                            
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-9.png" alt="Beauty Products" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Beauty Products</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
                                 </div>
                             </div>
-                            <p id="updateMailError" class="text-danger"></p>
-                        </form>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">  
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-2.png" alt="Hardware & Tools" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Hardware & Tools</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-10.png" alt="Jewellery/Ornaments" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Jewellery/Ornaments</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-3.png" alt="Fashion & Garments" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Fashion & Garments</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-11.png" alt="Catering & Event" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Catering & Event</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-4.png" alt="Safety Equipments" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Safety Equipments</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-12.png" alt="Interior Design" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Interior Design</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-5.png" alt="Furniture & Interior" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Furniture & Interior</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-13.png" alt="Retailer & Distributor" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Retailer & Distributor</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-6.png" alt="Print Media" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Print Media</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-14.png" alt="Restaurants & Cafe" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Restaurants & Cafe</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-7.png" alt="Bakery & Cake" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Bakery & Cake</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-15.png" alt="Art & Crafts" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Art & Crafts</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-8.png" alt="Education System" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Education System</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                                <div class="categories-box">
+                                    <div class="text-center">
+                                        <div class="category-icon">
+                                            <img src="assets/images/cat-icon-16.png" alt="Service Providers" class="img-fluid"> 
+                                        </div>
+                                        <span class="category-caption pt-sm-3 pt-2">Service Providers</span>
+                                        <span class="category-arrow"></span>
+                                    </div>                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="MS-controls">
+                            <button class="MS-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                            <button class="MS-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- End Categories Slider -->
+
+        <!-- Solution List Section -->
+        <section class="solution-section position-relative">
+            <div class="container overflow-hidden">
+                <div id="particles-js"></div>
+                <div class="count-particles">
+                    <span class="js-count-particles"></span>
+                </div>
+                <div class="solution-section-wrapper">
+                    <div class="sections-header text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <span class="tag text-fadeGrey font-weight-bold">Solutions</span>
+                        <div class="heading md">
+                            <h2>How does the solution Helps you?</h2>
+                        </div>
+                        <p class="sub-heading mx-600 mx-auto">Managed solution which helps you setup your virtual store where you can talk about your business in general and showcase your products and services.</p>
+                    </div>
+
+                    <div class="solution-content text-capitalize mx-auto d-flex mt-lg-5 mt-4" data-aos="fade-in" data-aos-duration="1000">
+                        <div class="center-circle rounded-circle text-center d-flex align-items-center justify-content-center mx-auto p-lg-4 p-3" data-aos="zoom-in" data-aos-duration="800">
+                            <h3 class="text-white">what we offer</h3>
+                        </div>
+                        <div class="bubble-box bubble-1 d-flex flex-md-row flex-column align-items-md-center text-md-right"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                            <span class="order-md-0 order-1">Easy Upload Of Product Catalog</span>
+                            <div class="bubbles order-md-1 order-0">
+                                <img src="assets/images/solution-icon-1.png" alt="Easy Upload Of Product Catalog">
+                            </div>
+                        </div>
+                        
+                        <div class="bubble-box bubble-2 d-flex flex-md-row flex-column align-items-md-center text-md-right"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">
+                            <span class="order-md-0 order-1">Get An Enquiry From Us</span>
+                            <div class="bubbles">
+                                <img src="assets/images/solution-icon-2.png" alt="Get An Enquiry From Us">
+                            </div>
+                        </div>
+                        
+                        <div class="bubble-box bubble-3 d-flex flex-column text-md-right"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900">
+                            <span class="order-1">Set Up Product Pricing</span>
+                            <div class="bubbles order-0">
+                                <img src="assets/images/solution-icon-3.png" alt="Set Up Product Pricing">
+                            </div>
+                        </div>
+                        
+                        <div class="bubble-box bubble-4 d-flex flex-column text-md-left"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900">
+                            <span class="order-1">Discounts For Customer</span>
+                            <div class="bubbles order-0">
+                                <img src="assets/images/solution-icon-4.png" alt="Discounts For Customer">
+                            </div>
+                        </div>
+
+                        <div class="bubble-box bubble-5 d-flex flex-md-row flex-column align-items-md-center justify-content-md-center text-md-left"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">
+                            <span class="order-1">Payment With Pre-Integrated Gateway</span>
+                            <div class="bubbles order-0">
+                                <img src="assets/images/solution-icon-5.png" alt="Payment With Pre-Integrated Gateway">
+                            </div>
+                        </div>
+
+                        <div class="bubble-box bubble-6 d-flex flex-md-row flex-column align-items-md-center justify-content-md-center text-md-left"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                            <span class="order-1">Downloadable Price List</span>
+                            <div class="bubbles order-0">
+                                <img src="assets/images/solution-icon-6.png" alt="Downloadable Price List">
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Email Section -->
+        <!-- End Solution List Section -->
+
+        <!-- Pricing Table Section -->
+        <section class="pricing-section bg-fadeGrey">
+            <div class="container">
+                <div class="sections-header text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="heading md">
+                        <h2>Pricing Designed to fit your business</h2>
+                    </div>
+                </div>
+                <div class="pricing-box-wrapper">
+                    <div class="slider center">
+                        <div>
+                            <div class="pricing-box pricing-left w-100">
+                                <div class="pricing-box-head text-center">
+                                    <h3 class="text-uppercase">GROW</h3>
+                                    <span class="caption text-fadeGrey">Recommended</span>
+                                </div>
+                                <div class="price-box text-center">
+                                    <div class="price d-flex align-items-end justify-content-center">
+                                        <span class="text-blue font-weight-medium">INR</span>
+                                        <h2 class="text-blue font-weight-semiBold px-2">14,999</h2>
+                                        <span class="font-weight-medium">/Yearly</span>
+                                    </div>
+                                    <div class="cut-price text-fadeGrey">
+                                        INR 29,999
+                                    </div>
+                                </div>
+                                <ul class="pricing-box-listing">
+                                    <li class="d-flex align-items-center mb-3">
+                                        Unlimited Products
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        Lead generation form
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        Lead management module
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pricing-box pricing-center w-100">
+                                <div class="pricing-box-head text-center">
+                                    <h3 class="text-uppercase">GROW</h3>
+                                    <span class="caption">Recommended</span>
+                                </div>
+                                <div class="price-box text-center">
+                                    <div class="price d-flex align-items-end justify-content-center">
+                                        <span class="font-weight-medium">INR</span>
+                                        <h2 class="font-weight-semiBold px-2">14,999</h2>
+                                        <span class="font-weight-medium">/Yearly</span>
+                                    </div>
+                                    <div class="cut-price">
+                                        INR 29,999
+                                    </div>
+                                </div>
+                                <ul class="pricing-box-listing">
+                                    <li class="d-flex align-items-center mb-3">
+                                        Unlimited Products
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        Lead generation form
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        Lead management module
+                                    </li>
+                                </ul>
+                                <div class="pricing-button text-center">
+                                    <p class="d-block mb-2">Want to purchase it</p>
+                                    <a class="btn btn-primary" href="#">Get Started Today</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pricing-box pricing-right w-100">
+                                <div class="pricing-box-head text-center">
+                                    <h3 class="text-uppercase">GROW</h3>
+                                    <span class="caption text-fadeGrey">Recommended</span>
+                                </div>
+                                <div class="price-box text-center">
+                                    <div class="price d-flex align-items-end justify-content-center">
+                                        <span class="text-blue font-weight-medium">INR</span>
+                                        <h2 class="text-blue font-weight-semiBold px-2">14,999</h2>
+                                        <span class="font-weight-medium">/Yearly</span>
+                                    </div>
+                                    <div class="cut-price text-fadeGrey">
+                                        INR 29,999
+                                    </div>
+                                </div>
+                                <ul class="pricing-box-listing">
+                                    <li class="d-flex align-items-center mb-3">
+                                        Unlimited Products
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        Lead generation form
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        Lead management module
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Pricing Table Section -->
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="sections-header text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="tag text-fadeGrey font-weight-bold">Testimonials</span>
+                    <div class="heading md">
+                        <h2>What our Client's Says?</h2>
+                    </div>
+                </div>
+                <div class="testimonials-slider-wrapper mx-auto pt-3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300"> 
+                    <div class="slider slider-for">
+                        <div class="testimonial-content text-center">
+                            <p>
+                                Etiam ut ultrices libero. Quisque ligula diam, lacinia id aliquet eu, scelerisque in massa. Nulla quis ante porttitor, ornare quam sollicitudin, tempor diam. Morbi leo arcu, fermentum at interdum sit amet, placerat vel nunc. Etiam volutpat elementum arcu non scelerisque.
+                            </p>
+                            <span class="testimonial-name font-weight-bold d-block pt-md-4 pt-3">
+                                Vestibulum ornare
+                            </span>
+                            <span class="testimonial-caption text-fadeGrey d-block">
+                                Customer
+                            </span>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis quo mollitia. Quisquam et similique omnis voluptatibus sunt placeat ipsam est explicabo soluta earum, consequatur dicta qui quasi magnam inventore!
+                            </p>
+                            <span class="testimonial-name font-weight-bold d-block pt-md-4 pt-3">
+                                Vestibulum
+                            </span>
+                            <span class="testimonial-caption text-fadeGrey d-block">
+                                Customer
+                            </span>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <p>
+                                Etiam ut ultrices libero. Quisque ligula diam, lacinia id aliquet eu, scelerisque in massa. Nulla quis ante porttitor, ornare quam sollicitudin, tempor diam. Morbi leo arcu, fermentum at interdum sit amet, placerat vel nunc. Etiam volutpat elementum arcu non scelerisque.
+                            </p>
+                            <span class="testimonial-name font-weight-bold d-block pt-md-4 pt-3">
+                                ornare
+                            </span>
+                            <span class="testimonial-caption text-fadeGrey d-block">
+                                Customer
+                            </span>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maiores aperiam, deleniti nostrum recusandae dolor cumque? Error nihil obcaecati exercitationem a harum autem qui recusandae aliquam non. Ea, dolore placeat!
+                            </p>
+                            <span class="testimonial-name font-weight-bold d-block pt-md-4 pt-3">
+                                Vestibulum
+                            </span>
+                            <span class="testimonial-caption text-fadeGrey d-block">
+                                Customer
+                            </span>
+                        </div>
+                        <div class="testimonial-content text-center">
+                            <p>
+                                Etiam ut ultrices libero. Quisque ligula diam, lacinia id aliquet eu, scelerisque in massa. Nulla quis ante porttitor, ornare quam sollicitudin, tempor diam. Morbi leo arcu, fermentum at interdum sit amet, placerat vel nunc. Etiam volutpat elementum arcu non scelerisque.
+                            </p>
+                            <span class="testimonial-name font-weight-bold d-block pt-md-4 pt-3">
+                                Vestibulum ornare
+                            </span>
+                            <span class="testimonial-caption text-fadeGrey d-block">
+                                Customer
+                            </span>
+                        </div>
+                    </div>
+                    <div class="slider slider-nav">
+                        <div>
+                            <div class="testimonial-img">
+                                <img src="assets/images/testimonial-1.png" alt="Users Review" class="img-fluid">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial-img">
+                                <img src="assets/images/testimonial-2.png" alt="Users Review" class="img-fluid">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial-img">
+                                <img src="assets/images/testimonial-3.png" alt="Users Review" class="img-fluid">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial-img">
+                                <img src="assets/images/testimonial-4.png" alt="Users Review" class="img-fluid">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial-img">
+                                <img src="assets/images/testimonial-5.png" alt="Users Review" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials Section -->
 
         <!-- Contact Us Section -->
-        <section class="contact-section" style="background-image: url('assets/images/contact-bg.png')">
+        <section class="contact-section">
             <div class="container position-relative">
-                <div class="contact-bg-text bg-text disable-selection" data-aos="zoom-in" data-aos-duration="1800">
-                    <h2>Contact</h2>
-                </div>
-                <div class="contact-block overlay-content" data-aos="fade-in" data-aos-duration="1300">
-                    <div class="heading md">
-                        <h2>Contact Us</h2>
+                <div class="contact-block d-lg-flex">
+                    <div class="contact-form-bg">
+                        <div style="background-image:url('assets/images/contact-bg.png')"></div>
                     </div>
-                    <div class="font-16 pt-2 pb-3">
-                        <p class="font-weight-light">Feel free to drop your message . We will reply you soon.</p>
+                    <div class="contact-form-wrapper position-relative px-lg-4 px-3 py-4">
+                        <div class="d-flex flex-column justify-content-center h-100 mx-400 mx-auto">
+                            <div class="heading md">
+                                <h2 class="text-white text-capitalize pb-3 pb-md-4">Wish to own a digital shop?</h2>
+                            </div>
+                            <form id="contactForm" action="" method="POST" class="contact-form w-100 pt-1">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inputName" placeholder="Type your full name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="inputEmail1" placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="inputQuery" placeholder="Select your query type">
+                                        <option>Option 1</option>
+                                        <option>Option 1</option>
+                                        <option>Option 1</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="textarea1" rows="3" placeholder="Write your query here..."></textarea>
+                                </div>
+                                <div class="pt-1">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <form id="contactForm" action="" method="POST" class="contact-form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="inputName" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="inputEmail1" aria-describedby="email" placeholder="Email Address">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" id="textarea1" rows="3" placeholder="Your Query"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-pink">Submit</button>
-                    </form>
+                    
                 </div>
             </div>
         </section>
@@ -452,24 +683,32 @@
 
         <!-- Footer Section -->
         <footer class="footer-section text-center">
-            <div class="container">
-                <div class="footer-links">
-                    <ul class="text-center">
-                        <li> <a href="index.html">About Us</a> </li>
-                        <li> <a href="our-product.html">Our Products</a> </li>
-                        <li> <a href="javascript:void(0)">FAQ</a> </li>
-                        <li> <a href="javascript:void(0)">Privacy Policy</a> </li>
-                        <li> <a href="javascript:void(0)">Terms & Condition</a> </li>
-                    </ul>
-                </div>
-                <div class="copyright-texxt pt-2">
-                    <p>2020 © intelligiacloud.com. All rights reserved.</p>
+            <div class="container position-relative">
+                <a class="footer-logo d-inline-block" href="javascript:void(0)">
+                    <img src="assets/images/footer-logo.png" alt="Webappshala" class="img-fluid">
+                </a>
+                <div class="footer-info">
+                    <p>
+                        <span>Meet Us At:</span> 
+                        <span class="font-weight-semiBold"> 
+                             Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016
+                        </span>
+                    </p>
+                    <p>
+                        <span>Call Us On:</span> 
+                        <span class="font-weight-semiBold"> +91 6390 644 702 / +91 6390 500 008</span>
+                    </p>
+                    <p>
+                        <span>Reach Us At: </span> 
+                        <span class="font-weight-semiBold">team@team.com</span>
+                    </p>
+                    <p class="copyright-text position-relative text-fadeGrey pt-3 mt-3">Copyright 2020. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
         <!-- End Footer Section -->
 
-        <div class="back-to-top rounded-circle">
+        <div class="back-to-top">
             <span></span>
         </div>
 
@@ -481,11 +720,17 @@
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
 
-        <!-- Mega Menu JS -->
-        <script src="assets/js/hs.megamenu.js"></script>
-        
         <!-- Aos JS -->
         <script src="assets/js/aos.min.js"></script>
+
+        <!-- Slick Slider JS -->
+        <script src="assets/js/slick.min.js"></script>
+
+        <!-- Multislider JS -->
+        <script src="assets/js/multislider.min.js"></script>
+
+        <!-- Partical JS -->
+        <script src="assets/js/particles.min.js"></script>
 
         <!-- Custom Js -->
         <script src="assets/js/custom.js"></script>

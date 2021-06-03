@@ -4,24 +4,24 @@
     padding: 0;
 }
 ::-webkit-selection { 
-    background: rgba(87, 147, 206,.4);
+    background: rgba(0, 175, 240, .4);
     color: #000; 
 }
 ::-ms-selection { 
-    background: rgba(87, 147, 206,.4);
+    background: rgba(0, 175, 240, .4);
     color: #000; 
 }
 ::-moz-selection { 
-    background: rgba(87, 147, 206,.4);
+    background: rgba(0, 175, 240, .4);
     color: #000; 
 }
 ::selection { 
-    background: rgba(87, 147, 206,.4);
+    background: rgba(0, 175, 240, .4);
     color: #000; 
 }
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
     color:#000000;
     line-height: 1.5;
     font-weight: 400;
@@ -44,38 +44,45 @@ a:focus {
     outline: 0;
 }
 .container {
-    max-width: 1350px;
+    max-width: 1270px;
 }
+
+/* === CSS for Colors === */
+.text-fadeGrey {
+    color: #979797!important;
+}
+.text-blue {
+    color: #00AFF0!important;
+}
+/* === End CSS for Colors === */
 
 /* === CSS for Background Colors === */
 .bg-fadeBlue {
-    background-color: #EEF8FA!important;
+    background-color: #84C4BB!important;
+}
+.bg-fadeGrey {
+    background-color: #F8F8F8!important;
 }
 /* === CSS for Background Colors === */
 
 /* === CSS for Buttons === */
 .btn {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     text-transform: uppercase;
-    border-radius: 50px;
-    padding: 9px 38px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 12px 30px;
+    min-width: 157px;
+    border-color:transparent;
 }
-.btn:hover {
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    transform: scale(1.03);
+.btn-primary {
+    background: -webkit-linear-gradient(to left, #F37016, #F0A110);
+    background: linear-gradient(to left, #F37016, #F0A110);
 }
-.btn-pink {
-    background-color: #FF8080;
+.btn-primary:hover {
     color: #fff;
-}
-.btn-pink:hover,
-.btn-pink:focus,
-.btn-pink:active {
-    background-color: #5793ce;
-    color: #fff;
+    border-color: transparent;
 }
 /* === CSS for Buttons === */
 
@@ -97,12 +104,6 @@ a:focus {
 /* === CSS for Common Transition === */
 .btn,
 .btn:hover,
-.banner-content .btn span,
-.banner-content .btn:hover span,
-.nav-item .nav-link,
-.nav-item .nav-link:hover,
-.nav-item .nav-link:after,
-.nav-item .nav-link:hover:after ,
 .transition-3ms {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -130,399 +131,106 @@ a:focus {
     position: absolute;
     z-index: 0;
 }
-/* === End Common CSS === */
-
-/* === CSS for Header section === */
-header * {
-    font-size: 14px;
+.cursor-pointer {
+    cursor: pointer;
 }
-.nav-item .nav-link:after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #FF8080;
-    border-radius: 50px;
-    display: block;
+.mx-100 {
+    max-width: 100px!important;
 }
-.nav-item.active .nav-link:after,
-.nav-item .nav-link:hover:after {
-    width: 20px;
+.mx-150 {
+    max-width: 150px!important;
 }
-.nav-item .nav-link {
-    color: #000;
-    font-weight: 400;
+.mx-220 {
+    max-width: 220px!important;
 }
-.nav-item.active > .nav-link {
-    font-weight: 600;
+.mx-250 {
+    max-width: 250px!important;
 }
-.header-section,
-.navbar,
-.fix-header .navbar,
-.navbar-brand,
-.header-section .navbar-brand img,
-.header-section.fix-header .navbar-brand img {
-    -moz-transition: all 0.25s ease 0s;
-    -o-transition: all 0.25s ease 0s;
-    -webkit-transition: all 0.25s ease 0s;
-    transition: all 0.25s ease 0s;
+.mx-300 {
+    max-width: 300px!important;
 }
-.navbar-brand {
-    padding: 0;
+.mx-400 {
+    max-width: 400px!important;
 }
-.hs-has-sub-menu > .nav-link:before { 
-    content: '';
-    display: inline-block;
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    height: 6px;
-    width: 6px;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 16px;
-    right: 2px;
+.mx-500 {
+    max-width: 500px!important;
 }
-.header-section .navbar {
-    background-color: #fff;
+.mx-600 {
+    max-width: 600px!important;
 }
-.banner-section {
-    margin-top: 108px;
+.mx-700 {
+    max-width: 700px!important;
 }
-/* === End CSS for Header section === */
-
-/* === CSS for Banner section === */
-.banner-section {
-    overflow: hidden;
-    padding: 227px 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.mx-800 {
+    max-width: 800px!important;
 }
-.banner-content {
-    max-width: 700px;
+.mx-1000 {
+    max-width: 1000px!important;
 }
-.banner-heading {
-    font-size: 46px;
+.form-control::placeholder {
+    color:#fff;
 }
-.banner-content p {
-    line-height: 30px;
-}
-.banner-content .btn {
-    height: 44px;
-    padding: 11px 64px 11px 20px;
-    position: relative;
-}
-.banner-content .btn span {
-    height: 43px;
-    width: 43px;
-    background: #E55757;
-    border-radius: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    line-height: 38px;
-    text-align: center;
-}
-.banner-content .btn:hover span,
-.banner-content .btn:focus span,
-.banner-content .btn:active span {
-    background: #2f6eac;
-}
-/* === End CSS for Banner section === */
-
-/* CSS for Home about section */
-.abt-section {
-    padding: 150px 0;
-}
-.abt-section .container {
-    max-width: 1040px;
-}
-/* End CSS for Home about section */
-.chartjs-size-monitor, .chartjs-size-monitor-expand, .chartjs-size-monitor-shrink {
-    position: absolute;
-    direction: ltr;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    pointer-events: none;
-    visibility: hidden;
-    z-index: -1;
-}
-/* === CSS for Our Products section === */
-.products-section-heading h2 {
-    font-size: 10.5vw;
-    color: #F3F3F3;
-    font-weight: 800;
-    line-height: 7.7vw;
-}
-.product-bg-text,
-.contact-bg-text {
-    color: #FCFCFC;
-}
-.product-bg-text h2,
-.contact-bg-text h2 {
-    font-size: 12.1vw;
-    font-weight: 800;
-    line-height: 9vw;
-}
-.product-bg-text {
-    top: -20px;
-    left: -35px;
-}
-.products-section > .product-item:nth-child(even) .product-bg-text {
-    top: 30px;
-    left: 10px;
-}
-.products-section-heading .container {
-    max-width: 1420px;
-}
-.products-section-heading {
-    padding-top: 100px;
-}
-.fade-white-gradient {
-    background: -webkit-linear-gradient(0deg, rgb(255 255 255) 0%, rgb(250 250 250) 100%);
-    background: linear-gradient(0deg, rgb(255 255 255) 0%, rgb(250 250 250) 100%);
-}
-.product-item {
-    padding: 160px 0 120px;
-    position: relative;
-    overflow: hidden;
-    background: -webkit-linear-gradient(0deg, rgb(255 255 255) 0%, rgb(250 250 250) 100%);
-    background: linear-gradient(0deg, rgb(255 255 255) 0%, rgb(250 250 250) 100%);
-}
-.product-count {
-    font-size: 8.83vw;
-    font-weight: 100;
-    line-height: 6.8vw;
-}
-.product-img {
-    max-width: 400px;
-}
-.product-img:after,
-.product-img > .img-block,
-.product-img .img-block:after {
-    -webkit-transition: all .35s ease-in-out;
-    -ms-transition: all .35s ease-in-out;
-    -moz-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out;
-}
-.product-img > .img-block {
-    position: relative;
-    padding-bottom: 100%;
-    background-position: center top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    z-index: 9;
-}
-.product-img:after {
-    content: '';
-    border: 1px solid #707070;
-    display: block;
-    position: absolute;
-    left: -15px;
-    right: 15px;
-    bottom: 15px;
-    top: -15px;
-    z-index: 1;
-}
-.product-description {
-    max-width: 560px;
-    max-height: 215px;
-    overflow: hidden;
-}
-.product-img:hover:after {
-    top: -18px;
-    left: -18px;
-}
-.product-img:hover .img-block {
-    -webkit-transform: translate(3px, 3px);
-    -ms-transform: translate(3px, 3px);
-    -moz-transform: translate(3px, 3px);
-    transform: translate(3px, 3px);
-    -webkit-box-shadow: -10px -10px 15px 0px rgba(0, 0, 0, 0.05);
-    -ms-box-shadow: -10px -10px 15px 0px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: -10px -10px 15px 0px rgba(0, 0, 0, 0.05);
-    box-shadow: -10px -10px 15px 0px rgba(0, 0, 0, 0.05);
-}
-.product-img .img-block:after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    top: 50%;
-    bottom: 50%;
-    background: rgba(0,0,0,.1);
-    border-radius: 50%;
-}
-.product-img:hover .img-block:after {
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    border-radius: 0;
-}
-/* === End CSS for Our Products section === */
-
-/* === CSS for Counting Blokcs Gradient Section === */
-.counter-sections {
-    padding: 72px 0;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-}
-.counter-text p {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 22px;
-    padding-top: 10px;
-}
-.counter-icon {
-    height: 59px;
-}
-/* === End CSS for Counting Blokcs Gradient Section === */
-
-/* === CSS for Email Section  === */
-.email-section {
-    padding: 85px 0;
-}
-.email-heading-block .heading h2 {
-    font-size: 35px;
-}
-.email-block {
-    background-color: #DE432A;
-    padding: 35px;
-    background-repeat: no-repeat;
-    background-position: right 20px bottom -30px;
-    overflow: hidden;
-}
-.email-box-bg-text {
-    font-size: 65px;
-    left: 10px;
-    right: -20px;
-    bottom: -20px;
-    top: 10px;
-    font-weight: 700;
-    opacity: 0.08;
-}
-.email-block .email-heading-block {
-    width: 356px;
-    padding: 40px 35px;
-}
-.email-field-block {
-    width: calc(100% - 356px);
-    padding-left: 45px;
-}
-.email-heading-block .heading {
-    max-width: 200px;
-}
-.email-form {
-    max-width: 560px;
-}
-.email-form .form-control {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 1px solid #DBDBDB;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    color: #fff;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 15px;
-}
-.email-form .form-control::placeholder {
-    color: #fff;
-}
-.email-form .form-control:focus {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 1px solid #DBDBDB;
+.form-control:focus {
+    outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #fff;
-}
-.btn-send {
-    width: 60px;
-    height: 54px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0;
     background-color: transparent;
+    border:1px solid #fff;
 }
-.btn-send:focus {
-    outline: 0;
-}
-.btn-send:hover {
-    -webkit-transform: scale(.95);
-    -ms-transform: scale(.95);
-    -moz-transform: scale(.95);
-    transform: scale(.95);
-}
-.email-field-block .font-18 {
-    line-height: 22px;
-}
-/* === End CSS for Email Section  === */
-
-/* === CSS for Contact section === */
-.contact-section {
-    padding: 65px 0;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-}
-.contact-block {
-    padding: 60px;
-    max-width: 590px;
-    margin-left: auto;
-}
-.contact-form .form-control {
-    color: #000000;
-    height: 42px;
-    padding: 12px 20px;
-    border: 1px solid #AEAEAE;
+.form-control {
+    height: calc(2em + .75rem + 2px);
+    padding: 11px 18px;
+    font-size: 12px;
+    color:#fff;
+    background-color: transparent;
+    border:1px solid #fff;
     -webkit-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
 }
-.contact-form textarea {
-    min-height: 100px;
-    resize: none;
+.sections-header .heading {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto; 
+    text-transform: capitalize;
 }
-.contact-bg-text h2 {
-    color: #FCFCFC;
-    opacity: .37;
-}
-.contact-bg-text {
-    top: 0px;
-    right: -20px;
-}
-/* === End CSS for Contact section === */
+/* === End Common CSS === */
 
-/* === CSS for Footer section === */
-footer {
-    font-size: 12px;
-    padding: 30px 0;
+/* === CSS for JC Header === */
+.header-section .navbar-brand {
+    max-width: 324px;
+}
+/* === End CSS for JC Header === */
+
+/* === CSS for JC Footer === */
+.footer-section {
+    font-family: 'Open Sans', sans-serif;
+    padding: 45px 0 60px; 
+}
+.footer-logo {
+    max-width: 126px;
+}
+.copyright-text:before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #efefef;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    max-width: 60px;
+    margin: 0 auto;
 }
 footer * {
-    font-weight: 300;
+    font-size:10px;
+    line-height: 18px;
 }
-.footer-links ul li {
-    display: inline-block;
-    padding: 0 10px;
+.footer-info {
+    margin-top: -12px;
 }
-.footer-links ul li a {
-    color: #000;
-}
-.footer-links ul li a:hover {
-    color: #FF8080;
-}
-/* === End CSS for Footer section === */
+/* === End CSS for JC Footer === */
 
-
-/* ========== CSS for Back To Top Button ========== */
+/* === CSS for Back To Top Button === */
 .back-to-top {
     position: fixed;
     bottom: 20px;
@@ -534,7 +242,9 @@ footer * {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    background-color: #e65757;
+    background-color: #2faff0;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
     -webkit-transition: all .35s ease-in-out;
     -ms-transition: all .35s ease-in-out;
     -moz-transition: all .35s ease-in-out;
@@ -565,124 +275,385 @@ footer * {
     -moz-transform: scale(1.15);
     transform: scale(1.15);
 }
-/* ========== End CSS for Back To Top Button ========== */
+/* === End CSS for Back To Top Button === */
 
-/* === CSS for Our Product Page === */
-.inner-pages-wrapper {
-    background-repeat: no-repeat;
-    background-position: right -170px top -70px;
-}
-.gradient-blue {
-    background: #5793CE;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(252deg, #5793CE 0%, #285EA0 100%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(252deg, #5793CE 0%, #285EA0 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.inner-banner {
-    overflow: hidden;
-    padding: 66px 60px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-}
-.banner-img {
-    padding-bottom: 82.135%;
-    max-width: 285px;
-    position: relative;
-}
-.banner-img img {
+/* === CSS for Banner Section === */
+.banner-bg-lg-text {
     position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    max-width: 1360px;
+    margin: 0 auto;
+    z-index: 10;
+    opacity: .04;
+}
+.banner-bg-lg-text h2 {
+    font-size: 10vw;
+    font-weight: 800;
+    color: #003548;
+    line-height: 11vw;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 75.759%;
+    background-size: cover;
+    min-height: 600px;
+}
+.banner-content {
+    max-width: 500px;
+}
+.form-section {
+    padding-bottom: 80px;
+}
+#particles-js {
+    position: absolute;
+    z-index: -1;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
-    height: 100%;
-    margin: auto;
+    opacity: .4;
 }
-.banner-bg-text {   
-    bottom: 0;
-    left: -5px;
-    right: 0;
-    letter-spacing: -2px;
-}
-.banner-bg-text h2 {
-    font-size: 18.51vw;
-    font-weight: 700;
-    line-height: 13.4vw;
-    color: #fff;
-    opacity: .09;
-}
-/* === CSS for Our Product Page === */
-
-/* === CSS for Static Content Block === */
-.static-content-section {
-    padding: 80px 0;
-}
-.static-content-section .container {
-    max-width: 1190px;
-}
-.static-content-section p {
-    font-weight: 300;
-}
-.static-content-section h4 {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 30px;
-}
-.content-blocks {
-    padding-top: 20px;
-}
-.content-blocks ol li + li,
-.content-blocks ul li + li {
-    margin-top: 12px;
-}
-ol.number-list > li {
-    list-style: decimal;
-    font-weight: 700;
-}
-ol.number-list {
-    padding-left: 18px;
-}
-.check-list > li {
-    padding-left: 28px;
+.form-section .container {
+    z-index: 99;
     position: relative;
 }
-.check-list > li:before {
-    content: '';
-    border-left: 3px solid #000;
-    border-bottom: 3px solid #000;
-    display: block;
+.dotted-bg {
     position: absolute;
-    width: 12px;
-    height: 7px;
     left: 0;
-    top: 12px;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    right: 0;
+    top:0;
+    bottom: 0;
 }
-.inner-pages-wrapper + .email-section {
-    padding-top: 25px!important;
-}
-/* === CSS for Static Content Block === */
+/* === End CSS for Banner Section === */
 
-/* === CSS for Newsletter Headiing === */
-.newsletter-heading .container {
-    max-width: 1430px;
+/* === CSS for services Section === */
+.services-section {
+    padding: 100px 0 75px; 
 }
-.newsletter-heading {
-    color: #FCFCFC;
+.service-list-box {
+    padding: 40px 0 25px; 
 }
-.newsletter-heading h2 {
-    font-size: 12.935vw;
-    line-height: 10vw;
-    font-weight: 800;
+.service-img-caption {
+    max-width: 127px;
+    display: inline-block;
+    line-height: 24px;
+    margin-top: 20px;
 }
-/* === End CSS for Newsletter Headiing === */
+.service-img {
+    max-width: 70px;
+}
+/* === End CSS for services Section === */
+
+/* === CSS for pricing table Section === */
+.pricing-box {
+    max-width: 320px;
+    min-width: 250px;
+    border: 1px solid #E9E9E9;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: #fff;
+    transition: background 0.5s ease;
+}
+.pricing-section {
+    padding: 70px 0 100px;
+}
+.pricing-box-wrapper {
+    padding-top: 45px;
+}
+.pricing-box-head h3 {
+    color: #646464;
+    font-weight: 600;
+    font-size: 24px;
+}
+.pricing-box-head {
+    padding: 40px 20px 20px;
+}
+.pricing-center {
+    position: relative;
+    z-index: 9;
+}
+.price-box {
+    border-bottom: 1px solid #E4E4E4;
+    border-top: 1px solid #E4E4E4;
+    padding: 30px 20px;
+}
+.cut-price {
+    padding-top: 8px;
+    font-size: 18px;
+    text-decoration: line-through;
+}
+.pricing-box-listing {
+    padding: 50px 20px;
+    max-width: 250px;
+    margin: 0 auto;
+    font-weight: 600;
+}
+.pricing-center .pricing-button {
+    border-top: 1px solid #fff;
+    padding: 30px 20px 50px;
+}
+.pricing-center .pricing-button .btn {
+    -webkit-box-shadow: 0px 0px 10px #006B92;
+    box-shadow: 0px 0px 10px #006B92;
+}
+.pricing-box-listing li {
+    background-image: url(../images/check-green.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 20px;
+}
+.pricing-center .pricing-box-listing li {
+    background-image: url(../images/check-white.png);
+}
+.pricing-box-wrapper {
+    max-width: 900px;
+    margin: auto;
+    /* overflow: hidden; */
+}
+/* .pricing-box-wrapper > .slider.center {
+    margin-right: -25px;
+} */
+.pricing-box-wrapper .slick-track {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    padding: 24px 0;
+}
+.pricing-box-wrapper .slick-track > .slick-slide:first-child {
+    margin-right: -20px;
+}
+.pricing-right {
+    margin-left: -20px;
+}
+
+/* === End CSS for pricing table Section === */
+
+/* === CSS for testimonials Section === */
+.solution-section,
+.testimonials-section {
+    padding: 100px 0;
+}
+.testimonial-img {
+    width: 71px;
+    height: 71px;
+    margin: 45px auto 10px;
+}
+.testimonial-name {
+    color:#004B67;
+}
+.testimonials-slider-wrapper {
+    max-width: 870px;
+}
+.slick-slide:focus {
+    outline: 0;
+}
+.slick-dots > li {
+    display: inline-block;
+    margin: 0 2px;
+}
+.slick-dots {
+    text-align: center;
+}
+.slick-dots > li button {
+    font-size: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    border: 0;
+    background: #d9d8d8;
+}
+.slick-dots > li.slick-active button {
+    background: #0f4b67;
+}
+/* === End CSS for testimonials Section === */
+
+/* === CSS for Solutions section === */
+.solution-content .center-circle {
+    height: 160px;
+    width: 160px;
+    background: #00AFF0;
+    position: relative;
+}
+.solution-content .center-circle:before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    top:8px;
+    border:1px dashed #fff;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    z-index: 9;
+}
+.bubbles {
+    padding: 10px;
+    margin: 12px;
+    border: 1px solid #E9E9E9;
+    background: #fff;
+    height: 78px;
+    width: 78px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.bubble-box > span {
+    max-width: 110px;
+    font-weight: 700;
+}
+.solution-section-wrapper {
+    position: relative;
+    z-index: 10;
+}
+/* === End CSS for Solutions section === */
+
+/* === CSS for Categories Section === */
+
+.categories-slider-wrapper {
+    padding: 70px 0 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.categories-section .sections-header {
+    max-width: 1130px;
+    color:#fff;
+}
+.categories-section .sections-header img {
+    width: 16px;
+    height: 8px;
+}
+.categories-slider .MS-content {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.categories-slider .MS-content .item {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    vertical-align: top;
+}
+.categories-box {
+    padding: 10px;
+}
+.categories-box:first-child {
+    margin-left: -55px;
+}
+.categories-box > div {
+    width: 150px;
+    height: 170px;
+    background: #fff;
+    padding:50px 10px 25px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.category-caption {
+    font-size: 12px;
+    font-weight: 700;
+    color: #585858;
+    display: block;
+}
+.category-arrow {
+    background-image: url(../images/arrow-blue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+}
+  
+.categories-slider .MS-controls button {
+    position: absolute;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    outline: 0;
+    top: 35px;
+}
+@media (max-width: 767px) {
+    .categories-slider .MS-controls button {
+      display: none;
+    }
+}
+.categories-slider .MS-controls .MS-left {
+    left: 10px;
+}
+@media (max-width: 992px) {
+    .categories-slider .MS-controls .MS-left {
+      left: -2px;
+    }
+}
+.categories-slider .MS-controls .MS-right {
+    right: 10px;
+}
+/* === End CSS for Categories Section === */
+
+/* === CSS for Contact section === */
+.contact-form-bg > div {
+    padding-bottom: 93%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* === End CSS for Contact section === */
+
 
 
 /* === CSS for Custom Animation === */
+
+/* ---- particles.js container ---- */
+/* ---- stats.js ---- */
+/* 
+.count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+} */
+
+.js-count-particles{
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+    -webkit-user-select: none;
+}
+
+#stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles{
+    border-radius: 0 0 3px 3px;
+}
+
 .animation-delay-2ms {
     -webkit-animation-delay: 0.2s!important;
     -moz-animation-delay: 0.2s!important;
@@ -726,196 +697,76 @@ ol.number-list {
     animation-delay: 0.8s!important;
 }
 
-/* Bounce Animation keyfram */
-@-webkit-keyframes bounce {
+@-webkit-keyframes tracking-in-contract-bck {
     0% {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
     }
-
-    50% {
-        -webkit-transform: translateY(-10px);
-        -moz-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        transform: translateY(-10px);
+    40% {
+      opacity: 0.6;
     }
-
     100% {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
     }
 }
-@-moz-keyframes bounce {
+@keyframes tracking-in-contract-bck {
     0% {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
     }
-
-    50% {
-        -webkit-transform: translateY(-10px);
-        -moz-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        transform: translateY(-10px);
+    40% {
+      opacity: 0.6;
     }
-
     100% {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
     }
 }
-@-ms-keyframes bounce {
+  
+.tracking-in-contract-bck {
+	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+  
+
+
+@-webkit-keyframes kenburns-left {
     0% {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 16% 50%;
+              transform-origin: 16% 50%;
     }
-
-    50% {
-        -webkit-transform: translateY(-10px);
-        -moz-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-
     100% {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+      -webkit-transform: scale(1.25) translate(-20px, 15px);
+              transform: scale(1.25) translate(-20px, 15px);
+      -webkit-transform-origin: left;
+              transform-origin: left;
     }
-}
-@keyframes bounce {
+  }
+  @keyframes kenburns-left {
     0% {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 16% 50%;
+              transform-origin: 16% 50%;
     }
-
-    50% {
-        -webkit-transform: translateY(-10px);
-        -moz-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-
     100% {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+      -webkit-transform: scale(1.25) translate(-20px, 15px);
+              transform: scale(1.25) translate(-20px, 15px);
+      -webkit-transform-origin: left;
+              transform-origin: left;
     }
+  }
+
+.kenburns-left {
+	-webkit-animation: kenburns-left 8s cubic-bezier(0.33, 0.25, 0.49, 0.81) both;
+	        animation: kenburns-left 8s cubic-bezier(0.33, 0.25, 0.49, 0.81) both;
 }
-.bounce {
-    -webkit-animation: bounce 1.6s ease-in-out infinite alternate; 
-    -moz-animation: bounce 1.6s ease-in-out infinite alternate; 
-    -ms-animation: bounce 1.6s ease-in-out infinite alternate; 
-    animation: bounce 1.6s ease-in-out infinite alternate; 
-}
-
-/* arrow motion Animation keyfram */
-@-webkit-keyframes arrow-motion {
-    0% {
-        -webkit-transform: translateX(-2px);
-        -moz-transform: translateX(-2px);
-        -ms-transform: translateX(-2px);
-        transform: translateX(-2px);
-    }
-
-    50% {
-        -webkit-transform: translateX(2px);
-        -moz-transform: translateX(2px);
-        -ms-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-
-    100% {
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@-moz-keyframes arrow-motion {
-    0% {
-        -webkit-transform: translateX(-2px);
-        -moz-transform: translateX(-2px);
-        -ms-transform: translateX(-2px);
-        transform: translateX(-2px);
-    }
-
-    50% {
-        -webkit-transform: translateX(2px);
-        -moz-transform: translateX(2px);
-        -ms-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-
-    100% {
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@-ms-keyframes arrow-motion {
-    0% {
-        -webkit-transform: translateX(-2px);
-        -moz-transform: translateX(-2px);
-        -ms-transform: translateX(-2px);
-        transform: translateX(-2px);
-    }
-
-    50% {
-        -webkit-transform: translateX(2px);
-        -moz-transform: translateX(2px);
-        -ms-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-
-    100% {
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@keyframes arrow-motion {
-    0% {
-        -webkit-transform: translateX(-2px);
-        -moz-transform: translateX(-2px);
-        -ms-transform: translateX(-2px);
-        transform: translateX(-2px);
-    }
-
-    50% {
-        -webkit-transform: translateX(2px);
-        -moz-transform: translateX(2px);
-        -ms-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-
-    100% {
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-.arrow-motion {
-    -webkit-animation: arrow-motion 1s ease-in-out infinite alternate; 
-    -moz-animation: arrow-motion 1s ease-in-out infinite alternate; 
-    -ms-animation: arrow-motion 1s ease-in-out infinite alternate; 
-    animation: arrow-motion 1s ease-in-out infinite alternate; 
-}
-
-/* === End CSS for Custom Animation === */
