@@ -2,13 +2,15 @@
 @media (min-width: 320px) {
     /* === CSS for Common Text === */
     .heading.md > h2 {
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 21px;
         line-height: 30px;
     }
     .heading.md > h3 {
         font-size: 18px;
         line-height: 26px;
+    }
+    .heading.md > h2 {
+        font-weight: 800;
     }
     .heading.md > h3 {
         font-weight: 500;
@@ -16,7 +18,8 @@
     .font-16 {
         font-size: 13px;
     }
-    .font-18 {
+    .font-18,
+    .static-content-section p {
         font-size: 15px;
         line-height: 20px;
     }
@@ -25,39 +28,25 @@
         line-height: 22px;
     }
     /* === End CSS for Common Text === */
-    .banner-content h1 {
-        font-size: 30px;
-        line-height: 40px;
-    }
 
-    .testimonial-content p,
-    .testimonial-name {
-        font-size: 16px;
-        line-height: 26px;
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
     }
-    .solution-content .center-circle h3 {
-        font-size: 16px;
-        font-weight: 700;
+    .navbar-expand-lg .navbar-nav > li > .nav-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
-    .price h2 {
-        font-size: 22px;
+    /* === CSS for Our Products section === */
+    .products-section > .product-item .product-details {
+        padding-left: 10px;
     }
+    .content-blocks ol li + li, .content-blocks ul li + li {
+        margin-top: 6px;
+    }
+    /* === End CSS for Our Products section === */
 }
 
-@media (min-width: 480px) {
-    .pricing-center * {
-        color: #fff!important;
-    }
-    .pricing-center {
-        position: relative;
-        z-index: 9;
-        border: 0!important;
-        background: -webkit-linear-gradient(#00D6C8, #00aff0);
-        background: linear-gradient(#00D6C8, #00aff0);
-        -webkit-box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
-        box-shadow: 0px 0px 24px rgba(0,0,0,0.29);
-    }
-}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
@@ -65,9 +54,9 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     /* === CSS for Common Text === */
-    .heading.md > h2 {
+     .heading.md > h2 {
         font-size: 24px;
-        line-height: 36px;
+        line-height: 32px;
     }
     .heading.md > h3 {
         font-size: 22px;
@@ -76,7 +65,8 @@
     .font-16 {
         font-size: 14px;
     }
-    .font-18 {
+    .font-18,
+    .static-content-section p {
         font-size: 16px;
         line-height: 24px;
     }
@@ -88,103 +78,70 @@
     .btn {
         height: 40px;
     }
-    .testimonial-caption {
-        font-size: 15px;
+
+    /* === CSS for Our Products section === */
+    .products-section > .product-item:nth-child(even) .product-block {
+        -ms-flex-direction: row-reverse!important;
+        flex-direction: row-reverse!important;
     }
-    .testimonial-content p,
-    .testimonial-name {
-        font-size: 18px;
-        line-height: 32px;
+    .products-section > .product-item:nth-child(odd) .product-img {
+        margin-left: 16px;
     }
-    .solution-content {
-        max-width: 820px;
-        position: relative;
-        height: 355px;
+    .products-section > .product-item:nth-child(even) .product-img {
+        margin-right: 16px;
     }
-    .bubble-box {
-        position: absolute;
+    .products-section > .product-item:nth-child(odd) .product-content {
+        padding-left: 16px;
     }
-    .bubble-1 {
-        left: 8%;
+    .products-section > .product-item:nth-child(even) .product-content {
+        padding-right: 16px;
     }
-    .bubble-2 {
-        left: 11%;
-    }
-    .bubble-3 {
-        left: 33%;
-    }
-    .bubble-4 {
-        right: 33%;
-    }
-    .bubble-5 {
-        right: 11%;
-    }
-    .bubble-6 {
-        right: 8%;
-    }
-    .bubble-3,
-    .bubble-4 {
-        bottom: 8%;
-    }
-    .bubble-2,
-    .bubble-5 {
-        top:30%;
-    }
-    .bubble-3 > div {
-        margin-left: auto;
-        margin-right: 0;
-    }
-    .bubble-4 > div {
-        margin-right: auto;
-        margin-left: 0;
-    }
-    .price h2 {
-        font-size: 32px;
-    }
+    /* === End CSS for Our Products section === */
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    .banner-content h1 {
-        font-size: 44px;
-        line-height: 60px;
+
+    /* === CSS for Header section === */
+    .fixed-top {
+        position: fixed!important;
+        z-index: 1030!important;
     }
-    .header-section .navbar {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        z-index: 20;
+    .header-section .fixed-top {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-    .banner-content-wrapper {
-        position: absolute;
-        left: 0;
-        right: 0;
-        z-index: 20;
-        bottom: 15%;
+    .header-section.fix-header .navbar {
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
-    .service-list-box {
-        margin-left: 34px;
+    /* .header-section.fix-header .navbar-brand img {
+        max-width: 85%;
+    } */
+    /* === End CSS for Header section === */
+
+    /* === CSS for Our Products section === */
+    .products-section .product-details {
+        padding-left: 28px;
     }
-    .solution-content .center-circle h3 {
-        font-size: 18px;
-        font-weight: 700;
+    .products-section > .product-item:nth-child(odd) .product-content {
+        padding-left: 30px;
     }
-    /* === CSS for Contact section === */
-    .contact-form-bg {
-        max-width: 663px;
-        width: 100%;
+    /* === End CSS for Our Products section === */
+
+    /* === Inner Page Common CSS === */
+    .inner-pages-wrapper {
+        padding-top: 128px;
     }
-    .contact-form-wrapper {
-        max-width: calc(100% - 663px);
-        width: 100%;
-        background-color:#84C4BB; 
-    }
-    /* === End CSS for Contact section === */
+    /* === End Inner Page Common CSS === */
 }
 
 @media (min-width: 1024px) {
     /* === CSS for Common Text === */
+    .heading.md > h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
     .heading.md > h3 {
         font-size: 28px;
         line-height: 40px;
@@ -192,7 +149,8 @@
     .font-16 {
         font-size: 16px;
     }
-    .font-18 {
+    .font-18,
+    .static-content-section p {
         font-size: 18px;
         line-height: 30px;
     }
@@ -201,15 +159,33 @@
         line-height: 36px;
     }
     /* === End CSS for Common Text === */
+
+    /* === CSS for Header section === */
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+        padding-right: 0;
+    }
+    /* === End CSS for Header section === */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    /* === CSS for Our Products section === */
+    .products-section > .product-item:nth-child(odd) .product-content {
+        padding-left: 48px;
+    }
+    /* === End CSS for Our Products section === */
 }
 @media (max-width: 1280px) {
 }
 
 @media (max-width: 1350px) {
+    .banner-section .col-12:last-child {
+        padding-right: 0;
+    }
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -217,85 +193,343 @@
 
 @media (max-width: 1100px) {
     /* === CSS for Header section === */
+    .navbar-brand {
+        max-width: 210px;
+    }
+    .banner-section {
+        margin-top: 84px;
+    }
+    .navbar-brand img {
+        width: 100%;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
     /* === End CSS for Header section === */
+
+    /* === CSS for Banner section === */
+    .banner-content {
+        max-width: 570px;
+    }
+    .banner-heading {
+        font-size: 36px;
+    }
+    .banner-content p {
+        line-height: 24px;
+    }
+    .banner-section {
+        padding: 160px 0;
+    }
+    /* === End CSS for Banner section === */
+
+    /* CSS for Home about section */
+    .abt-section {
+        padding: 80px 0;
+    }
+    /* End CSS for Home about section */
+
+    /* === CSS for Our Products section === */
+    .products-section-heading {
+        padding-top: 60px;
+    }
+    .product-item {
+        padding: 120px 0 70px;
+    }
+    /* === End CSS for Our Products section === */
+
+    /* === CSS for Contact section === */
+    .contact-block {
+        padding: 20px;
+    }
+    .contact-bg-text {
+        right: 0;
+    }
+    /* === End CSS for Contact section === */
+
+    /* === CSS for Our Product Page === */
+    .inner-banner {
+        padding: 25px;
+    }
+    /* === End CSS for Our Product Page === */
 }
 
 @media (max-width: 1024px) {
+    /* === CSS for Contact section === */
+    .contact-block {
+        padding: 0;
+    }
+    /* === End CSS for Contact section === */
+    .banner-section {
+        background-position: center right -32px;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
-    .header-section .navbar-brand {
-        max-width: 234px;
-        height: 70px;
+
+    /* === CSS for Header section === */
+    .navbar {
+        padding: 1rem;
     }
-    .banner-bg-lg-text h2 {
+    .navbar-collapse {
+        height: auto !important;
+        overflow-y: auto;
+        max-height: none;
+        background-color: rgba(87, 147, 207,.97);
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 100%;
+        border: 0;
+        padding: 0 40px 0 80px;
+        z-index: 9;
+        opacity: 0;
+        pointer-events: none;
+        -webkit-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -moz-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -ms-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -webkit-transition-delay: .2s;
+        -moz-transition-delay: .2s;
+        -ms-transition-delay: .2s;
+        transition-delay: .2s;
+    }
+    .navbar-toggler, 
+    .navbar-collapse, 
+    .navbar-collapse.collapse, 
+    .navbar-collapse.collapsing, 
+    .navbar-collapse.collapse.show {
+        display: block!important;
+    }
+    .navbar-collapse.show {
+        opacity: 1;
+        pointer-events: all;
+        bottom: 0;
+        padding: 100px 40px;
+        -webkit-transition-delay: 0;
+        -moz-transition-delay: 0;
+        -ms-transition-delay: 0;
+        transition-delay: 0;
+    }
+    .navbar-toggler[aria-expanded="true"] {
+        position: fixed;
+        right: 15px;
+        margin: 0;
+        z-index: 999;
+    }
+    .navbar-show {
+        height: 100%;
+        overflow: hidden;
+    }
+    .navbar-toggler .toggle-icon {
+        display: block;
+        height: 2px;
+        width: 28px;
+        background-color: #5793ce;
+        -webkit-transition: all 0.4s 0s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -moz-transition: all 0.4s 0s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -ms-transition: all 0.4s 0s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        transition: all 0.4s 0s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+    }
+    .navbar-toggler .toggle-icon + .toggle-icon {
+        margin-top: 6px;
+    }
+    .navbar-toggler[aria-expanded="true"] .toggle-icon:first-child {
+        transform: rotate(45deg);
+        opacity: 1;
+    }
+    .navbar-toggler[aria-expanded="true"] .toggle-icon:last-child {
+        transform: rotate(-45deg);
+        opacity: 1;
+        margin-top: -10px;
+    }
+    .navbar-toggler[aria-expanded="true"] .toggle-icon {
+        background-color: #fff;
+        opacity: 0;
+        -webkit-transition-delay: 0.8s;
+        -moz-transition-delay: 0.8s;
+        -ms-transition-delay: 0.8s;
+        transition-delay: 0.8s;
+    }
+    .navbar-toggler:focus, .navbar-toggler:hover {
+        outline: 0;
+    }
+    .nav-item .nav-link {
         color: #fff;
     }
-    .banner-bg-wrapper {
-        display: none;
+    .navbar-nav .nav-item + .nav-item {
+        margin-top: 10px;
+    }
+    .navbar-nav li a {
+        transform: translateY(10px);
+        opacity: 0;
+        -webkit-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -moz-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -ms-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -webkit-transition-delay: 0.6s;
+        -moz-transition-delay: 0.6s;
+        -ms-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+    }
+    .navbar-collapse.show .navbar-nav li a {
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transition-delay: 0.6s;
+        -moz-transition-delay: 0.6s;
+        -ms-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+    }
+    .navbar-collapse.show .navbar-nav li + li a {
+        -webkit-transition-delay: 0.7s;
+        -moz-transition-delay: 0.7s;
+        -ms-transition-delay: 0.7s;
+        transition-delay: 0.7s;
+    }
+    .navbar-collapse.show .navbar-nav li + li + li a {
+        -webkit-transition-delay: 0.8s;
+        -moz-transition-delay: 0.8s;
+        -ms-transition-delay: 0.8s;
+        transition-delay: 0.8s;
+    }
+    .navbar-collapse.show .navbar-nav li + li + li + li a {
+        -webkit-transition-delay: 0.9s;
+        -moz-transition-delay: 0.9s;
+        -ms-transition-delay: 0.9s;
+        transition-delay: 0.9s;
+    }
+    .navbar-collapse.show .navbar-nav li + li + li + li + li a {
+        -webkit-transition-delay: 1s;
+        -moz-transition-delay: 1s;
+        -ms-transition-delay: 1s;
+        transition-delay: 1s;
+    }
+    .hs-has-sub-menu > .nav-link:before {
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+    .hs-sub-menu {
+        background: transparent;
+        padding: 10px 20px 0;
     }
     .banner-section {
-        color:#fff;
-        padding: 200px 0 150px;
-        z-index: 10;
-        position: relative;
+        margin-top: 0;
     }
-    .banner-section .mobile-bg {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url(../images/banner.png);
+    /* === End CSS for Header section === */
+
+    /* === CSS for Banner section === */
+    .banner-content .btn {
+        height: 40px;
+        padding: 9px 50px 9px 14px;
+    }
+    .banner-content .btn span {
+        height: 38px;
+        width: 38px;
+        line-height: 35px;
+    }
+    .fixed-top {
+        position: relative;
+        z-index: 1030;
+        background: #fff;
+        -webkit-box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.2);
+        -ms-box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+    .contact-section:after {
+        content: '';
         position: absolute;
         left: 0;
         right: 0;
-        top: 0;
         bottom: 0;
+        top:0;
+        background: rgba(0,0,0,.5);
+        z-index: 2;
     }
-    .banner-section:before {
-        content:'';
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0,.6);
-        z-index: 1;
-    }
-    .banner-content-wrapper > div {
-        position: relative;
-        z-index: 15;
-    }
-    /* === CSS for Contact section === */
-    .contact-form-bg {
-        display: none;
-    }
-    .contact-form-wrapper {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url(../images/contact-bg.png);
-    }
-    .contact-form-wrapper:before {
-        content:'';
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background-color: rgba(131, 195, 187,.9);
-        z-index: 1;
-    }
-    .contact-form-wrapper > div {
-        position: relative;
+    .contact-section > .container {
         z-index: 9;
     }
-    /* === End CSS for Contact section === */
+    .contact-bg-text h2 {
+        color: #8b8b8b;
+    }
+    .contact-block {
+        color: #fff;
+    }
+    /* === End CSS for Banner section === */
+
+    /* CSS for Home about section */
+    .abt-section,
+    .static-content-section {
+        padding: 60px 0;
+    }
+    /* End CSS for Home about section */
+
+    /* === CSS for Our Products section === */
+    .products-section-heading {
+        padding-top: 40px;
+    }
+    .product-item {
+        padding: 80px 0 50px;
+    }
+    /* === End CSS for Our Products section === */
+
+    /* === CSS for Counting Blokcs Gradient Section === */
+    .counter-sections {
+        padding: 50px 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .counter-text p {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    /* === End CSS for Counting Blokcs Gradient Section === */
+
+    /* === CSS for Email Section  === */
+    .email-block {
+        padding: 20px;
+    }
+    .email-box-bg-text {
+        font-size: 40px;
+        line-height: 58px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        top: 0px;
+    }
+    .email-heading-block .heading h2 {
+        font-size: 28px;
+    }
+    .email-block .email-heading-block {
+        width: 230px;
+        padding: 20px 15px;
+    }
+    .email-field-block {
+        width: calc(100% - 230px);
+        padding-left: 15px;
+    }
+    /* === End CSS for Email Section  === */
+
+    /* === Inner Page Common CSS === */
+     .inner-pages-wrapper {
+        padding-top: 20px;
+    }
+    /* === End Inner Page Common CSS === */
+    
 }
 
 @media (max-width: 991.98px) and (orientation: landscape) {
+    .navbar-collapse.show {
+        padding: 80px 50px;
+    }
 }
 @media (max-width: 575.8px) and (orientation: landscape) {
+    .navbar-collapse.show {
+        padding: 50px;
+    }
 }
 
 @media (max-width: 575.8px) and (orientation: portrait) {
@@ -307,155 +541,135 @@
 @media (max-width: 1024px) and (orientation: portrait) {
 }
 
-@media (max-width: 768px) {
-    .btn {
-        padding: 8px 24px;
-        min-width: 127px;
-    }
-    .services-section {
-        padding: 50px 0 45px;
-    }
-    .categories-slider-wrapper,
-    .pricing-section {
-        padding: 40px 0;
-    }
-    .solution-section, .testimonials-section {
-        padding: 40px 0;
-    }
-    .pricing-box-wrapper {
-        padding-top: 25px;
-    }
-    .footer-section {
-        padding: 25px 0 30px;
-    }
-    .footer-logo {
-        max-width: 100px;
-    }
-    .testimonial-img {
-        width: 51px;
-        height: 51px;
-        margin: 10px auto;
-    }
-    .pricing-box-listing {
-        padding: 30px 20px;
-        max-width: 210px;
-    }
-    .cut-price {
-        font-size: 15px;
-    }
-}
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .header-section .navbar-brand {
-        max-width: 194px;
-        height: 57px;
+    body {
+        font-size: 14px;
     }
-    .banner-bg-lg-text {
-        bottom: 0;
+    .btn {
+        padding: .375rem 1.2rem;
+        font-size: 12px;
     }
-    .banner-bg-lg-text h2 {
-        font-size: 70px;
-        line-height: 80px;
+    .banner-heading {
+        font-size: 24px;
     }
-    /* .pricing-box {
-        margin: 15px auto;
-        max-width: 420px;
-    } */
-    .bubble-box {
-        text-align: center;
-        width: 50%;
+    .banner-section {
+        padding: 60px 0;
+        /* background: linear-gradient(to top, #f5fbfd, #ffffff)!important; */
+    }
+    footer {
+        padding: 20px 0;
+    }
+    /* CSS for Home about section */
+    .abt-section,
+    .contact-section,
+    .counter-sections,
+    .static-content-section {
+        padding: 35px 0;
+    }
+    /* End CSS for Home about section */
+    
+    /* === CSS for Our Products section === */
+    .product-img {
+        max-width: 270px;
+    }
+    .product-block .col-md-4 {
+        padding-left: 30px;
+        /* padding-bottom: 25px; */
+    }
+    .product-item {
+        padding: 50px 0 35px;
+    }
+    .products-section  .product-img {
+        margin: auto;
+    }
+    .product-count {
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .product-bg-text,
+    .products-section > .product-item:nth-child(even) .product-bg-text {
+        top: 15px;
+        left: 0;
+    }
+    /* === End CSS for Our Products section === */
+
+    /* === CSS for Email Section  === */
+    .email-block .email-heading-block {
+        width: 200px;
         padding: 15px 10px;
     }
-    .solution-content {
-        flex-wrap: wrap
+    .email-field-block {
+        width: calc(100% - 200px);
+        padding-left: 10px;
     }
-    .bubbles {
-        margin: 10px auto;
+    .email-heading-block .heading h2 {
+        font-size: 24px;
     }
-    .bubble-box > span {
-        margin: 0 auto;
+    .email-box-bg-text {
+        font-size: 35px;
+        line-height: 44px;
     }
-    .solution-content {
-        max-width: 359px;
+    .email-section {
+        padding: 45px  0px;
     }
-    .center-circle {
-        width: 180px!important;
-        height: 180px!important;
+    /* === End CSS for Email Section  === */
+
+    /* === CSS for Static Content Block === */
+    .static-content-section h4 {
+        font-size: 18px;
+        line-height: 22px;
     }
+    .inner-pages-wrapper {
+        background-image: none!important;
+    }
+    /* === CSS for Static Content Block === */
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .footer-logo {
-        max-width:70px;
+    /* === CSS for Header section === */
+    .navbar-brand {
+        max-width: 180px;
     }
-}
-@media (max-width: 479.98px) {
-    .pricing-box-wrapper {
-        max-width: 310px;
+    /* === End CSS for Header section === */
+
+    .banner-bg-text {
+        left: 0;
     }
-    .pricing-box {
-        max-width: 290px;
-        min-width: 250px;
-        margin-left: auto;
-        margin-right: auto;
+    .banner-bg-text h2 {
+        font-size: 23.51vw;
+        line-height: 17.4vw;
+    }
+    .product-count {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .products-section-heading h2 {
+        font-size: 12.7vw;
+        line-height: 9vw;
+    }
+    .newsletter-heading h2 {
+        font-size: 15.5vw;
+        line-height: 13vw;
+    }
+    .product-bg-text h2, .contact-bg-text h2 {
+        font-size: 16.1vw;
+        line-height: 11vw;
     }
 
-    .pricing-box-wrapper .slick-track > .slick-slide:last-child  .pricing-box {
-        margin-right: auto
+    /* === CSS for Email Section  === */
+    .email-field-block {
+        width: 100%;
+        padding-top: 15px;
+        padding-left: 0;
     }
+    .email-block {
+        background-size: 60%;
+    }
+    /* === End CSS for Email Section  === */
 
-    .slider.center .slick-current .pricing-box {
-        border: 0!important;
-        background: -webkit-linear-gradient(#00D6C8, #00aff0);
-        background: linear-gradient(#00D6C8, #00aff0);
-        -webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.19);
-        box-shadow: 0px 0px 6px rgba(0,0,0,0.19);
-    }
-    .slider.center .slick-current > *,
-    .slider.center .slick-current h3,
-    .slider.center .slick-current .caption,
-    .slider.center .slick-current .text-blue,
-    .slider.center .slick-current .cut-price {
-        color: #fff!important;
-    }
-    .slider.center .slick-current .pricing-box-listing li {
-        background-image: url(../images/check-white.png);
-    }
-
-    .slick-arrow {
-        margin: 0;
-        padding: 0;
-        background: none;
-        border: none;
-        border-radius: 0;
-        outline: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        font-size: 0;
-        position: absolute;
-        bottom: -10px;
-    }
-    .slick-arrow:focus {
-        outline: 0!important;
-    }
-    .slick-prev {
-        left: 43%;
-        width: 0;
-        height: 0;
-        border-left: 0 solid transparent;
-        border-right: 15px solid #f17133;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-    }
-    .slick-next {
-        right: 43%;
-        width: 0;
-        height: 0;
-        border-right: 0 solid transparent;
-        border-left: 15px solid #f17133;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
+    .inner-banner {
+        padding: 60px 25px;
     }
 }
